@@ -20,7 +20,7 @@ class HomeController extends _Controller
 		$pageComponents = ContentPageModel::getByComponent($flgPage);
 
 		// return $pageComponents;
-		return view('site/xtrafer/pages/default')
+		return view('site/pages/default')
 			->with('flgPage', $flgPage)
 			->with('pageComponents', $pageComponents);
 	}
