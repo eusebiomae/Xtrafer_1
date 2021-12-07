@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="pt-br">
+<html class="wide wow-animation" lang="en">
 
 <head>
     <title>Xtra-fer Comércio de Ferramentas</title>

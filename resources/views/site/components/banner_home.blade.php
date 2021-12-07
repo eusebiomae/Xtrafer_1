@@ -45,27 +45,25 @@
         </div>
     </div>
 </section> --}}
-<div class="main-content-wrapper">
-    <section id="banner_home" class="slider-section">
-        <div class="slider-container">
+<section id="banner_home" class="slider-section">
+    <div class="slider-container">
+        <ul class="site-slider">
             @foreach ($banners as $banner)
-                <ul class="site-slider">
-                    <li>
-                        <div class="slider-img"><img src="{{ $banner->image }}" alt="Sldie 1" /></div>
-                        <div class="slider-text">
-                            <h3>{{ $banner->title_pt}}
-                            </h3>
-                            <p><span>{{ $banner->subtitle_pt}}</span></p>
-                            <div class="banner-btns"> <a href="pages/about-us.html" class="banner-learn-btn">learn
-                                    more</a>
-                                <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">get
-                                    a
-                                    quote</a>
-                            </div>
+                <li>
+                    <div class="slider-img"><img src="{{ $banner->image }}" alt="Sldie 1" /></div>
+                    <div class="slider-text">
+                        <h3>{{ $banner->title_pt }}
+                        </h3>
+                        <p><span>{{ $banner->subtitle_pt }}</span></p>
+                        <div class="banner-btns"> <a href="pages/about-us.html" class="banner-learn-btn">learn
+                                more</a>
+                            <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">get
+                                a
+                                quote</a>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </li>
             @endforeach
-        </div>
-    </section>
-</div>
+        </ul>
+    </div>
+</section>
