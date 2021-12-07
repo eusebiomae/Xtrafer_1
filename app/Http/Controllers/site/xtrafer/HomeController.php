@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Model\api\Configuration\ContentPageModel;
 use App\Model\api\Prospection\CourseModel;
 use App\Model\api\SchoolInformationModel;
+use App\Model\api\SlideModel;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends _Controller
@@ -19,10 +20,14 @@ class HomeController extends _Controller
 
 		$pageComponents = ContentPageModel::getByComponent($flgPage);
 
+		$banners = SlideModel::get();
+
 		// return $pageComponents;
+
 		return view('site/pages/default')
 			->with('flgPage', $flgPage)
-			->with('pageComponents', $pageComponents);
+			->with('pageComponents', $pageComponents)
+			->with('banners', $banners);
 	}
 }
 

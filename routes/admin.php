@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Auth::routes();
+// Auth::routes();
 // Login
 Route::get('login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
@@ -75,9 +75,9 @@ Route::group([ 'middleware' => [ 'auth:admin' ] ], function() {
 	// Gerenciamento e Configuração Paginas do site
 	// Otimizado por Joel Zanata - Normalização do Código
 	// 24/08/2020
-	Route::group([ 'prefix' => 'contentpage' ], function () {
-		$ctrll = 'Admin\ContentPageController@';
-		$name = 'admin.configuration_page.contentpage';
+	Route::group([ 'prefix' => 'contentpage', 'middleware' => [ 'pageConfig:page' ], ], function () {
+		$ctrll = 'Admin\Configuration\ContentPageController@';
+		$name = 'admin.contentpage';
 
 		Route::get('', "{$ctrll}list")->name($name);
 		Route::get('insert', "{$ctrll}insert")->name($name);
@@ -89,7 +89,7 @@ Route::group([ 'middleware' => [ 'auth:admin' ] ], function() {
 
 	Route::group([ 'prefix' => 'contentsection' ], function () {
 		$ctrll = 'Admin\ContentSectionController@';
-		$name = 'admin.configuration_page.contentsection';
+		$name = 'admin.contentsection';
 
 		Route::get('', "{$ctrll}list")->name($name);
 		Route::get('insert', "{$ctrll}insert")->name($name);

@@ -12,11 +12,11 @@ class ContentPageController extends BaseMethodController {
 	function __construct() {
 		$this->pageKey = 'page';
 
-		$this->apiModel = new ContentPageModel();
+		$this->apiModel = new ContentPageModel;
 
 		$this->config = (object) [
 			'pathView' => 'admin/configuration/contentPage',
-			'urlAction' => 'admin/configuration/contentpage',
+			'urlAction' => 'admin/contentpage',
 		];
 	}
 
