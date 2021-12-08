@@ -118,5 +118,22 @@
         </div>
     </section>
     <!-- services end -->
+    <!-- small contactus bar start -->
+    <section class="contactus-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 display-flex align-item-center">
+                    <div class="contactus-bar-text">
+                        <h2>LOOKING AN ADAQUATE SOLUTION FOR YOUUR PROJECT</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="contactus-bar-button-block"> <a href="pages/contact-us.html"
+                            class="contactus-bar-btn">contact us</a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- small contactus bar end -->
 @endforeach
 <canvas></canvas>

@@ -3,7 +3,7 @@
 
 <head>
     <title>Xtra-fer Comércio de Ferramentas</title>
-    <link rel="shortcut icon" type="image/jpg" href="{{ url('assets/images/favicon.png')}}" />
+    <link rel="shortcut icon" type="image/jpg" href="{{ url('assets/images/favicon.png') }}" />
     <meta charset="UTF-8">
     <meta name="description" content="HTML Templates">
     <meta name="keywords" content="Construction,Building,Tools">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="{{ url('assets/css/style.css')  }}">
+    <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/responsive.css') }}">
 </head>
 
@@ -94,8 +94,8 @@
                         <div class="main-menu">
                             <nav class="main-menu-nav">
                                 <ul>
-                                    <li class="sub-menu-parent"> <a href="index.html">Home</a> </li>
-                                    <li class="sub-menu-parent"> <a href="pages/about-us.html">Xtra-fer</a> </li>
+                                    <li class="sub-menu-parent"> <a href="/">Home</a> </li>
+                                    <li class="sub-menu-parent"> <a href="/about_details">Xtra-fer</a> </li>
                                     <li><a href="pages/brands.html">Distribuição</a></li>
                                     <!-- <li><a href="pages/brands.html">Produtos</a></li> -->
                                     <!-- <li><a href="pages/brands.html">Treinamento</a></li> -->
@@ -112,6 +112,69 @@
         </div>
         <!-- main header end -->
 
+        <!-- Modal -->
+        <div class="modal fade quote" id="getquote" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="sub-heading-medium m-15px-b">Request Quote</h2>
+                                </div>
+                                <div class="col-12">
+                                    <div class="quote-form-wrapper">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-input" placeholder="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="quote-form-wrapper">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-input" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="quote-form-wrapper">
+                                        <label class="form-label">Phone</label>
+                                        <input type="text" class="form-input" placeholder="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="quote-form-wrapper">
+                                        <label class="form-label">Services</label>
+                                        <select class="form-input" required>
+                                            <option>Select Your Service</option>
+                                            <option>Architecture</option>
+                                            <option>Renovation</option>
+                                            <option>Construction</option>
+                                            <option>Interior & Rxterior</option>
+                                            <option>Other services</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="quote-form-wrapper">
+                                        <label class="form-label">Message</label>
+                                        <textarea class="form-input-textarea" rows="4" placeholder="Your Message"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="request-quote-btn">request a quote</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal End-->
         @yield('content')
     </div>
 
@@ -121,6 +184,13 @@
     <!-- Javascript-->
     <script src="{{ url('assets/js/core.min.js') }}"></script>
     <script src="{{ url('assets/js/script.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     @include('site.layout.footer')
     @yield('scripts')

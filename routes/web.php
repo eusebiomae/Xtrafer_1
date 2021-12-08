@@ -18,7 +18,7 @@ Route::get('/', 'site\xtrafer\HomeController@index')->name('home')->middleware([
 
 Route::get('about', 'site\xtrafer\aboutController@index')->name('about')->middleware(['injectFlgPage:about']);
 
-Route::get('about_us_details', 'site\xtrafer\aboutController@index')->name('about_us_details')->middleware(['injectFlgPage:about_us_details']);
+Route::get('about_details', 'site\xtrafer\aboutController@index')->name('about_details')->middleware(['injectFlgPage:about_details']);
 
 Route::get('budget', 'site\xtrafer\BudgetController@index')->name('budget')->middleware(['injectFlgPage:budget']);
 

@@ -36,7 +36,7 @@ class AboutController extends _Controller
 		// return $pageComponents;
 		// return $flgPage;
 
-		return view('site/bookbox/pages/default')
+		return view('site/pages/default')
 		->with('flgPage', $flgPage)
 		->with('pageComponents', $pageComponents)
 		->with('teamMapData', $teamMapData)

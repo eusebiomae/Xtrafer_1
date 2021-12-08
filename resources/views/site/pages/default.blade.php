@@ -1,6 +1,6 @@
 @extends('site.layout.site')
 
-@section('title', $pageComponents['description_pt'])
+{{-- @section('title', $pageComponents['description_pt']) --}}
 
 @section('content')
 	@if(isset($pageComponents))
