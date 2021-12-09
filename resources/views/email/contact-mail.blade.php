@@ -47,22 +47,12 @@
 	</style>
 </head>
 <body>
-	@php
-		$data = GigaGetData::footer();
-	@endphp
 	<ul class="container">
-		<li class="item header text-center">
-			<img src="/{{$data['image']}}" alt="Logo empresa" height="50px" style="margin: 10px 0">
-		</li>
 		<li class="item text-center text-uppercase"><b>{{ $payload['subject'] }}</b></li>
-		<li class="item">{{ $payload['description_pt'] }}</li>
+		<li class="item">{{ $payload['msg'] }}</li>
 		<li class="item">
-			<b>Ass:</b> {{ $payload['name'] }} {{$payload['last_name']}}.<br>
+			<b>Ass:</b> {{ $payload['name'] }}<br>
 			{{ $payload['email'] }}.<br>
-			{{ $payload['phone'] }}.
-		</li>
-		<li class="item header text-center" style="margin:0px 0;">
-			Enviado pelo site <a href="#" title="Ir para o Site">{{$data['name']}}</a>
 		</li>
 	</ul>
 </body>

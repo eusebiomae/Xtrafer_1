@@ -1,11 +1,11 @@
 <!-- experts start -->
 @foreach ($pageData->content as $item)
-<section class="section">
+<section class="section" style="padding: 0px 0px">
 		<div class="container">
 				<div class="row">
 						<div class="col-12">
 								<div class="main-heading-block">
-										<h2 class="main-heading">our best experts</h2>
+										<h2 class="main-heading">Nossos especialistas</h2>
 								</div>
 						</div>
 				</div>
@@ -17,10 +17,10 @@
 														src="assets/images/our-team-1.jpg" alt="team">
 												<div class="content-experts-details fadeIn-bottom">
 														<ul>
-																<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-																<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-																<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-																<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+																<li title="Telefone"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+																<li title="Email"><a href="#"><i class="fas fa-at"></i></a></li>
+																<li title="Whatsapp"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+																{{-- <li><a href="#"><i class="fab fa-linkedin"></i></a></li> --}}
 														</ul>
 												</div>
 										</div>
@@ -37,10 +37,10 @@
 														src="assets/images/our-team-2.jpg" alt="team">
 												<div class="content-experts-details fadeIn-bottom">
 														<ul>
-																<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-																<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-																<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-																<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+																<li title="Telefone"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+																<li title="Email"><a href="#"><i class="fas fa-at"></i></a></li>
+																<li title="Whatsapp"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+																{{-- <li><a href="#"><i class="fab fa-linkedin"></i></a></li> --}}
 														</ul>
 												</div>
 										</div>
@@ -57,10 +57,10 @@
 														src="assets/images/our-team-3.jpg" alt="team">
 												<div class="content-experts-details fadeIn-bottom">
 														<ul>
-																<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-																<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-																<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-																<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+																<li title="Telefone"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+																<li title="Email"><a href="#"><i class="fas fa-at"></i></a></li>
+																<li title="Whatsapp"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+																{{-- <li><a href="#"><i class="fab fa-linkedin"></i></a></li> --}}
 														</ul>
 												</div>
 										</div>
@@ -77,10 +77,10 @@
 														src="assets/images/our-team-4.jpg" alt="team">
 												<div class="content-experts-details fadeIn-bottom">
 														<ul>
-																<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-																<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-																<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-																<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+															<li title="Telefone"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+															<li title="Email"><a href="#"><i class="fas fa-at"></i></a></li>
+															<li title="Whatsapp"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+															{{-- <li><a href="#"><i class="fab fa-linkedin"></i></a></li> --}}
 														</ul>
 												</div>
 										</div>

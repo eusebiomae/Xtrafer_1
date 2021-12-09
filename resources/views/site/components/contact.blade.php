@@ -1,114 +1,163 @@
 <!-- Contact information-->
-@foreach ($pageData->content as $item)
-<section class="section section-lg bg-default">
-	<!-- section wave-->
-	<div class="section-wave">
-		<svg x="0px" y="0px" width="1920px" height="46px" viewbox="0 0 1920 46" preserveAspectRatio="none">
-			<path d="M1920,0.5c-82.8,0-109.1,44-192.3,44c-78.8,0-116.2-44-191.7-44c-77.1,0-115.9,44-192,44c-78.2,0-114.6-44-192-44c-78.4,0-115.3,44-192,44c-76.9-0.1-119-44-192-44c-77,0-115.2,44-192,44c-73.6,0-114-44-190.9-44c-78.5,0-117.2,44-194.1,44c-75.9,0-113-44-191-44V46h1920V0.5z"></path>
-		</svg>
-	</div>
-	<div class="container container-bigger">
-		<div class="row row-ten row-50 justify-content-md-center justify-content-xl-between">
-			<div class="col-md-9 col-lg-6">
-				<h3>{{__('csa.title')}}</h3>
-				<hr class="divider divider-left divider-default">
-				<p class="big">{{__('csa.subtitle')}}</p>
-				<!-- RD Mailform-->
-				<form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-					<div class="row row-20 row-fix">
-						<div class="col-md-12">
-							<div class="form-wrap form-wrap-validation">
-								<label class="form-label-outside" for="form-1-name">{{__('csa.name')}}</label>
-								<input class="form-input" id="form-1-name" type="text" name="name" data-constraints="@Required"/>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-wrap form-wrap-validation">
-								<label class="form-label-outside" for="form-1-company">{{__('csa.company')}}</label>
-								<input class="form-input" id="form-1-company" type="text" name="company" data-constraints="@Required"/>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-wrap form-wrap-validation">
-								<label class="form-label-outside" for="form-1-invoice">{{__('csa.invoice')}}</label>
-								<input class="form-input" id="form-1-invoice" type="text" name="invoice" data-constraints="@Required"/>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-wrap form-wrap-validation">
-								<label class="form-label-outside" for="form-1-last-name">{{__('csa.product')}}</label>
-								<input class="form-input" id="form-1-last-name" type="text" name="last-name" data-constraints="@Required"/>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-wrap form-wrap-validation">
-								<label class="form-label-outside" for="form-1-email">{{__('csa.email')}}</label>
-								<input class="form-input" id="form-1-email" type="email" name="email" data-constraints="@Email @Required"/>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-wrap form-wrap-validation">
-								<label class="form-label-outside" for="form-1-phone">{{__('csa.phone')}}</label>
-								<input class="form-input" id="form-1-phone" type="text" name="phone" data-constraints="@Numeric @Required"/>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="form-wrap form-wrap-validation">
-								<label class="form-label-outside" for="form-1-subject">{{__('csa.text')}}</label>
-								<input class="form-input" id="form-1-subject" type="text" name="subject" data-constraints="@Required"/>
-							</div>
-						</div>
-						<div class="col-sm-12">
-							<div class="form-wrap form-wrap-validation">
-								<label class="form-label-outside" for="form-1-message">{{__('csa.message')}}</label>
-								<textarea class="form-input" id="form-1-message" name="message" data-constraints="@Required"></textarea>
-							</div>
-						</div>
-						<div class="col-sm-12 offset-custom-4">
-							<div class="form-button">
-								<button class="button button-secondary button-nina" type="submit">{{__('csa.submit')}}</button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="col-md-9 col-lg-4 col-xl-3">
-				<div class="column-aside">
-					<div class="row">
-						<div class="col-sm-10 col-md-6 col-lg-12">
-							<h6>{{__('csa.address')}}</h6>
-							<hr class="divider-thin">
-							<article class="box-inline"><span class="icon novi-icon icon-md-smaller icon-primary mdi mdi-map-marker"></span><span><a href="http://maps.google.com/maps?q=1259+Avenida+Joaquim+Payolla,+Campinas,+CEP+13040211" target="blank">Av. Joaquim Payolla, 1259 Parque da Figueira -  Campinas - São Paulo - Brasil <br class="d-none d-xl-block"> Cep: 13040-211</a></span></article>
-						</div>
-						<div class="col-sm-10 col-md-6 col-lg-12">
-							<h6>{{__('csa.phone')}}</h6>
-							<hr class="divider-thin">
-							<article class="box-inline"><span class="icon novi-icon icon-md-smaller icon-primary mdi mdi-phone"></span>
-								<ul class="list-comma">
-									<li><a href="tel:+55-16-3272-6380" target="_blank">(19) 3272-6380</a></li>
-									{{-- <li><a href="tel:#">1-800-3434-876</a></li> --}}
-								</ul>
-							</article>
-						</div>
-						<div class="col-sm-10 col-md-6 col-lg-12">
-							<h6>{{__('csa.email')}}</h6>
-							<hr class="divider-thin">
-							<article class="box-inline"><span class="icon novi-icon icon-md-smaller icon-primary mdi mdi-email-open"></span><span><a href="mailto:atendimento@transformadoresminuzzi.com.br?subject=Informação sobre a Minuzzi" target="_blank">atendimento@transformadoresminuzzi.com.br</a></span></article>
-						</div>
-						<div class="col-sm-10 col-md-6 col-lg-12">
-							<h6>{{__('csa.officeSchedule')}}</h6>
-							<hr class="divider-thin">
-							<article class="box-inline"><span class="icon novi-icon icon-md-smaller icon-primary mdi mdi-calendar-clock"></span>
-								<ul class="list-0">
-									<li>Sex–Sex: 07:30 - 17:30</li>
-									{{-- <li>Sat–Sun: 11:00 am–4:00 pm</li> --}}
-								</ul>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-@endforeach
+{{-- @foreach ($pageData->content as $item) --}}
+<!-- content start -->
+<div class="main-content-wrapper">
+    <section class="breadcrumb-section about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-5">
+                    <div class="breadcrumb-wrapper">
+                        <h2>Contáte-nos</h2>
+                        <nav>
+                            <ul>
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active"><a href="#">Contáte-nos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-7">
+                    <div class="main-heading-block">
+                        <h2 class="main-heading">Nossa localização</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4 text-center item">
+                    <div class="contact-block-wrapper"> <span class="icon-box"><i
+                                class="material-icons">location_on</i></span>
+                        <h2 class="contact-box-heading">nos visite</h2>
+                        <p class="contact-box-info">R. José Pio Magalhães, 5 - Guarulhos</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center item">
+                    <div class="contact-block-wrapper">
+                        <a href="mailto:contato@xtrafer.com.br?subject=Informação sobre Xtra-fer"><span
+                                class="icon-box"><i class="material-icons">email</i></span></a>
+                        <h2 class="contact-box-heading">nos escreva</h2>
+                        <p class="contact-box-info"><a
+                                href="mailto:contato@xtrafer.com.br?subject=Informação sobre Xtra-fer">contato@xtrafer.com.br</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center item">
+                    <div class="contact-block-wrapper">
+                        <a href="tel:+55-11-2401-2697"><span class="icon-box"><i
+                                    class="material-icons">call</i></span></a>
+                        <h2 class="contact-box-heading">nos ligue</h2>
+                        <p class="contact-box-info"><a href="tel:+55-11-2401-2697">+55 11 2401 2697</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <div class="map-wrapper">
+                        <div class="mapouter">
+                            <h2>&nbsp;</h2>
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0"
+                                        scrolling="no" marginheight="0" marginwidth="0"
+                                        src="https://maps.google.com/maps?width=600&amp;height=350&amp;hl=pt&amp;q=guarulhos/Xtra-Fer+Com%C3%A9rcio+de+Ferramentas&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                        href="https://www.fridaynightfunkin.net/friday-night-funkin-mods-fnf-play-online/">FNF
+                                        Mods</a></div>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        width: 100%;
+                                        height: 350px;
+                                    }
+
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        width: 100%;
+                                        height: 350px;
+                                    }
+
+                                    .gmap_iframe {
+                                        height: 350px !important;
+                                    }
+
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" style="margin: 50px; margin-bottom: 0px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="contact-form-wrapper">
+                        <h2 class="main-heading">nos envie uma mensagem</h2>
+                        <div class="form-inner">
+                            <form method="POST" action="/sendContact">
+																{{ csrf_field() }}
+                                <div class="row">
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="contact-form-group">
+                                            <label class="form-label">Nome</label>
+                                            <input name="name" class="form-input" type="text" placeholder="Seu Nome">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="contact-form-group">
+                                            <label class="form-label">Empresa</label>
+                                            <input name="company" class="form-input" type="text" placeholder="Sua Empresa">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="contact-form-group">
+                                            <label class="form-label">Email</label>
+                                            <input name="email" class="form-input" type="text" placeholder="Seu Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="contact-form-group">
+                                            <label class="form-label">Assunto</label>
+                                            <input name="subject" class="form-input" type="text" placeholder="Seu Assunto">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <div class="contact-form-group">
+                                            <label class="form-label">Mensagem</label>
+                                            <textarea class="form-input-textarea" rows="6"
+                                                placeholder="Seu Mensagem" name="msg"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-md-12">
+                                        <div class="contact-form-group float-right">
+                                            <button id="your-id" type="submit" class="learn-more-btn float-right"> enviar </button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // 1. Acquire a reference to our <form>.
+            //    This can also be done by setting <form name="blub">:
+            //       var form = document.forms.blub;
+        </script>
+
+    </section>
+</div>
+<!-- content end -->
+{{-- @endforeach --}}

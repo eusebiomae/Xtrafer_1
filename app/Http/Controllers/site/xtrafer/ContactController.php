@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\site\xtrafer;
 
+use App\Model\api\Configuration\ContentPageModel;
 use Illuminate\Http\Request;
 use App\Model\api\SchoolInformationModel;
 use App\Model\api\SlideModel;
@@ -20,43 +21,45 @@ class ContactController extends _Controller
 	{
 		$flgPage = $request->get('flgPage');
 
-		$content = ContentModel::whereHas('contentPage', function ($query) use ($flgPage) {
-			$query->where('flg_page', $flgPage);
-		})->get();
+		$pageComponents = ContentPageModel::getByComponent($flgPage);
+
+		// $content = ContentModel::whereHas('contentPage', function ($query) use ($flgPage) {
+		// 	$query->where('flg_page', $flgPage);
+		// })->get();
 
 		// $features = FeatureModel::whereHas('contentPage', function($query) use ($flgPage) {
 		// 	$query->where('flg_page', $flgPage);
 		// })->get();
 
-		$schoolInformation = schoolInformation();
+		// $schoolInformation = schoolInformation();
 
-		$features = [
-			(object) [
-				'icon' => 'pe-7s-phone',
-				'title' => 'Telefone',
-				// 'description' => $schoolInformation->phone1,
-			],
-			(object) [
-				'icon' => 'pe-7s-mail',
-				'title' => 'E-mail',
-				// 'description' => $schoolInformation->email1,
-			],
-			(object) [
-				'icon' => 'pe-7s-map',
-				'title' => 'Endereço',
-				// 'description' => $schoolInformation->fullAddress,
-			],
-		];
+		// $features = [
+		// 	(object) [
+		// 		'icon' => 'pe-7s-phone',
+		// 		'title' => 'Telefone',
+		// 	],
+		// 	(object) [
+		// 		'icon' => 'pe-7s-mail',
+		// 		'title' => 'E-mail',
+		// 	],
+		// 	(object) [
+		// 		'icon' => 'pe-7s-map',
+		// 		'title' => 'Endereço',
+		// 	],
+		// ];
 
-		return view('site/bookbox/pages/contact')
+			// return $pageComponents;
+
+		return view('site/pages/contact')
 			->with('flgPage', $flgPage)
-			->with('schoolInformation', $schoolInformation)
-			->with('features', $features)
-			->with('banner', SlideModel::whereHas('contentPage', function($query) use ($flgPage) {
-				$query->where('flg_page', $flgPage);
-			})->first())
-			->with('content', $content)
-			->with('footerLinks', $this->generateFooterLinks());
+			->with('pageComponents', $pageComponents);
+			// ->with('schoolInformation', $schoolInformation)
+			// ->with('features', $features)
+			// ->with('banner', SlideModel::whereHas('contentPage', function($query) use ($flgPage) {
+			// 	$query->where('flg_page', $flgPage);
+			// })->first())
+			// ->with('content', $content)
+			// ->with('footerLinks', $this->generateFooterLinks());
 	}
 
 	public function save(Request $request) {

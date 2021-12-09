@@ -3,9 +3,9 @@
 @section('content')
 
 	{{-- $banner --}}
-	@if (isset($carrossel))
+	{{-- @if (isset($carrossel))
 		@include('site.components.banner_generic', ['banner' => $carrossel])
-	@endif
+	@endif --}}
 
 	{{-- SECTION about --}}
 	@if(isset($pageComponents))

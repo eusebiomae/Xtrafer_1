@@ -34,10 +34,10 @@
                     <div class="col-xl-5 offset-xl-3 col-lg-6 col-md-7 col-12 col-sm-5">
                         <div class="header-top-left"> <span class="d-m-none">
                                 <i class="far fa-envelope"></i>
-                                <a href="#">contato@xtrafer.com.br</a>
+                                <a href="mailto:contato@xtrafer.com.br?subject=Informação sobre Xtra-fer">contato@xtrafer.com.br</a>
                             </span> <span class="d-m-none">
                                 <i class="fal fa-phone"></i>
-                                <a href="#">+123 456 7890</a>
+                                <a href="tel:+55-11-2401-2697">+55 11 2401 2697</a>
                             </span> </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-12 col-12 col-sm-12">
@@ -125,48 +125,54 @@
                         <form>
                             <div class="row">
                                 <div class="col-12">
-                                    <h2 class="sub-heading-medium m-15px-b">Request Quote</h2>
+                                    <h2 class="sub-heading-medium m-15px-b">Faça seu orçamento</h2>
                                 </div>
                                 <div class="col-12">
                                     <div class="quote-form-wrapper">
-                                        <label class="form-label">First Name</label>
-                                        <input type="text" class="form-input" placeholder="First Name" required>
+                                        <label class="form-label">Nome</label>
+                                        <input type="text" class="form-input" placeholder="Nome" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="quote-form-wrapper">
-                                        <label class="form-label">Last Name</label>
-                                        <input type="text" class="form-input" placeholder="Last Name" required>
+                                        <label class="form-label">Sobrenome</label>
+                                        <input type="text" class="form-input" placeholder="Sobrenome" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="quote-form-wrapper">
-                                        <label class="form-label">Phone</label>
-                                        <input type="text" class="form-input" placeholder="Phone" required>
+                                        <label class="form-label">Empresa</label>
+                                        <input type="text" class="form-input" placeholder="Empresa" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="quote-form-wrapper">
-                                        <label class="form-label">Services</label>
+                                        <label class="form-label">Telefone</label>
+                                        <input type="text" class="form-input" placeholder="Telefone" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="quote-form-wrapper">
+                                        <label class="form-label">Serviços</label>
                                         <select class="form-input" required>
-                                            <option>Select Your Service</option>
-                                            <option>Architecture</option>
-                                            <option>Renovation</option>
-                                            <option>Construction</option>
-                                            <option>Interior & Rxterior</option>
-                                            <option>Other services</option>
+                                            <option>Selecione...</option>
+                                            <option>Soluções em Ferramentas</option>
+                                            <option>Soluções para Industria</option>
+                                            <option>Logística</option>
+                                            <option>Treinamento</option>
+                                            <option>Outros</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="quote-form-wrapper">
-                                        <label class="form-label">Message</label>
-                                        <textarea class="form-input-textarea" rows="4" placeholder="Your Message"
+                                        <label class="form-label">Mensagem</label>
+                                        <textarea class="form-input-textarea" rows="4" placeholder="Sua Mensagem"
                                             required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="request-quote-btn">request a quote</button>
+                                    <button type="submit" class="request-quote-btn">faça seu orçamento</button>
                                 </div>
                             </div>
                         </form>

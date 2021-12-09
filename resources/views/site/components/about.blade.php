@@ -99,7 +99,7 @@
                             <div class="tab-content" id="nav-tabContent">
 
                                 <div class="tab-pane fade show active" id="who-we" role="tabpanel">
-                                    <h3 class="sub-heading-small">About Us</h3>
+                                    <h3 class="sub-heading-small">Sobre nos</h3>
                                     <h2 class="main-heading">Avançamos Juntos<br> com sua empresa</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -110,7 +110,7 @@
                                 </div>
 
                                 <div class="tab-pane fade" id="our-mission" role="tabpanel">
-                                    <h3 class="sub-heading-small">About Us</h3>
+                                    <h3 class="sub-heading-small">Sobre nos</h3>
                                     <h2 class="main-heading">Avançamos Juntos<br> com sua missão</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -121,7 +121,7 @@
                                 </div>
 
                                 <div class="tab-pane fade" id="what-we" role="tabpanel">
-                                    <h3 class="sub-heading-small">About Us</h3>
+                                    <h3 class="sub-heading-small">Sobre nos</h3>
                                     <h2 class="main-heading">Avançamos Juntos<br> com sua oferecemos</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -132,7 +132,7 @@
                                 </div>
 
                                 <div class="tab-pane fade" id="safety" role="tabpanel">
-                                    <h3 class="sub-heading-small">About Us</h3>
+                                    <h3 class="sub-heading-small">Sobre nos</h3>
                                     <h2 class="main-heading">Avançamos Juntos<br> com sua segurança</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

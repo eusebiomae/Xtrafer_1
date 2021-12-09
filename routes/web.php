@@ -20,6 +20,8 @@ Route::get('about', 'site\xtrafer\aboutController@index')->name('about')->middle
 
 Route::get('about_details', 'site\xtrafer\aboutController@index')->name('about_details')->middleware(['injectFlgPage:about_details']);
 
+Route::get('service_details', 'site\xtrafer\ServiceController@index')->name('service_details')->middleware(['injectFlgPage:service_details']);
+
 Route::get('budget', 'site\xtrafer\BudgetController@index')->name('budget')->middleware(['injectFlgPage:budget']);
 
 Route::get('budget/{id}', 'site\xtrafer\BudgetController@index')->name('budget')->middleware(['injectFlgPage:budget']);
@@ -35,7 +37,7 @@ Route::get('products', 'site\xtrafer\ProductController@index')->name('products')
 
 Route::get('contact', 'site\xtrafer\ContactController@index')->name('contact')->middleware(['injectFlgPage:contact']);
 
-Route::post('contact', 'site\xtrafer\ContactController@store');
+// Route::post('contact', 'site\xtrafer\ContactController@store');
 
 Route::get('search', 'site\xtrafer\SearchController@search')->middleware(['injectFlgPage:search']);
 
@@ -57,7 +59,8 @@ Route::post('register', 'site\xtrafer\RegisterController@store');
 
 Route::get('lang/{lang}', 'site\xtrafer\LanguageController@switchLang')->name('lang.switch');
 
-Route::get('/bilingualism', 'site\xtrafer\\BilingualismController@index');
+Route::get('/bilingualism', 'site\xtrafer\BilingualismController@index');
+Route::post('sendContact', 'site\xtrafer\EmailController@contact');
 
 // Route::get('/test', function () {
 // 	App::setLocale('');
