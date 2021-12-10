@@ -46,12 +46,12 @@
 							</div>
 						@endif
 
-						@if ($fieldPageConfig->show('correspondingCourseCategory'))
+						{{-- @if ($fieldPageConfig->show('correspondingCourseCategory'))
 							<div class="col-sm-3">
 								<label class="control-label">Categoria de Curso (Correspondente)</label>
 								<select name="correspondingCourseCategory[]" class="form-control m-b" {!! $fieldPageConfig->attr('correspondingCourseCategory') !!}></select>
 							</div>
-						@endif
+						@endif --}}
 
 						@if ($fieldPageConfig->show('description_pt'))
 							<div class="col-sm-6">

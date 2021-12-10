@@ -1,6 +1,6 @@
 @foreach ($pageData->content as $item)
 <!-- latest news start -->
-<section class="section">
+<section class="section" style="margin-top: 75px;">
 	<div class="container">
 			<div class="row">
 					<div class="col-12">

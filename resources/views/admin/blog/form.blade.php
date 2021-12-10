@@ -58,23 +58,22 @@
 								<select onchange="typeBlog(this.value)" class="form-control m-b" {!! $fieldPageConfig->attr('title') !!}>
 
 								<select id="blog_category_id" name="blog_category_id" class="form-control m-b" {!! $fieldPageConfig->attr('blog_category_id') !!}>
-									<option value="blog">Notícias</option>
+									{{-- <option value="blog">Notícias</option>
 									<option value="article">Artigo</option>
-									<option value="article">Dica do mês</option>
+									<option value="article">Dica do mês</option> --}}
 								</select>
 							</div>
 						@endif
 
-						{{-- @if ($fieldPageConfig->show('author_post'))
+						@if ($fieldPageConfig->show('author_post'))
 							<div class="col-sm-2">
 								<label class="control-label">Autor*</label>
-								<select id="author_post" name="author_post" class="form-control m-b" {!! $fieldPageConfig->attr('author_post') !!}>
-									@foreach($listSelectBox->author as $item)
+								<input id="author_post" name="author_post" class="form-control m-b" {!! $fieldPageConfig->attr('author_post') !!}>
+									{{-- @foreach($listSelectBox->author as $item)
 									<option value="{{ $item->id }}">{{ $item->name }}</option>
-									@endforeach
-								</select>
+									@endforeach --}}
 							</div>
-						@endif --}}
+						@endif
 
 						@if ($fieldPageConfig->show('scheduling_date'))
 							<div class="col-sm-3">
@@ -90,7 +89,12 @@
 							<div class="col-sm-2">
 								<label class="control-label">Status*</label>
 								<div class="input-group">
-									<select type="text" name="status" class="form-control" {!! $fieldPageConfig->attr('status') !!}></select>
+									{{-- <select type="text" name="status" class="form-control" {!! $fieldPageConfig->attr('status') !!}></select> --}}
+
+									<select id="status" name="status" class="form-control m-b" {!! $fieldPageConfig->attr('status') !!}>
+										<option value="active">Ativo</option>
+										<option value="paused">Pausado</option>
+									</select>
 								</div>
 							</div>
 						@endif

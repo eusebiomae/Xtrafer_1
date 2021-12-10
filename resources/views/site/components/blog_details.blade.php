@@ -1,200 +1,195 @@
-{{-- @foreach ($pageData->content as $item)
-	<section id="blog_details" class="section section-xxl swiper-slide-blog" style="background-image: url('{{$item['image_bg']}}');">
-		<div class="container">
-			<!-- Owl Carousel-->
-			<div class="owl-carousel" data-items="1" data-sm-items="2" data-lg-items="3" data-margin="30" data-dots="true" data-mouse-drag="false">
-
-
-				<!-- Post Classic-->
-				<article class="post post-classic box-md wow slideInDown">
-					<a class="post-classic-figure" href="blog-post.html"><img src="{{$blog->image}}" alt="" width="370" height="239"/></a>
-					<div class="post-classic-content">
-						<div class="post-classic-time">
-							<time datetime="2020-08-09">{{$blog->scheduling_date}}</time>
+	<!-- content start -->
+	<div class="main-content-wrapper">
+		<section class="breadcrumb-section about">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-5">
+						<div class="breadcrumb-wrapper">
+							<h2>News</h2>
+							<nav>
+								<ul>
+									<li class="breadcrumb-item"><a href="#">Home</a></li>
+									<li class="breadcrumb-item active"><a href="#">News</a></li>
+								</ul>
+							</nav>
 						</div>
-						<h5 class="post-classic-title">{{$blog->title_pt}}</h5>
-						<p class="post-classic-text">{{!! $blog->text_pt !!}}</p>
-
-						<a class="entry-more" href="blog_post_details/{{$blog->id}}" data-toggle="modal" data-target="#model-quote{{ $blog->id }}" id="modelquote{{ $blog->id }}"><i class="fa fa-plus"></i>
-							<span>Ler mais</span>
-						</a>
 					</div>
-				</article>
+				</div>
 			</div>
-		</div>
-	</div>
-</section>
-@endforeach --}}
-
-@foreach ($pageData->content as $item)
-<section class="section section-xl bg-default text-md-left">
-	<div class="container">
-		<div class="row row-50 row-md-60">
-			<div class="col-lg-12 col-xl-12">
-				<div class="inset-xl-right-100">
-					<div class="row row-50 row-md-60 row-lg-80">
-						<div class="col-sm-12 col-md-12 col-xl-12">
-							<article class="post post-modern-1 box-xxl">
-								<div class="post-modern-panel">
-									{{-- <div>{{ $blog->category }}</div> --}}
-									<div><span class="icon mdi mdi-calendar-clock"></span>
-										<time class="post-modern-time"
-										datetime="2020-09-08">{{ $blog->scheduling_date }}</time>
+		</section>
+		<section class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<div class="single-post-wrapper">
+							<div class="post-content">
+								<div class="post-image"> <img src="../../assets/images/img/news-1.jpg" alt="img"> </div>
+								<div class="post-body">
+									<div class="post-meta"> <span class="post-author">
+                                                <i class="far fa-user"></i>
+                                                <a href="#">Admin</a>
+                                            </span> <span class="post-cat">
+                                                <i class="far fa-folder-open"></i>
+                                                <a href="#">News</a>
+                                            </span> <span class="post-date">
+                                                <i class="far fa-calendar"></i>
+                                                <a href="#">June 14, 2016</a>
+                                            </span> <span class="post-comment">
+                                                <i class="far fa-comment"></i>
+                                                <a href="#">03 Comments</a>
+                                            </span> </div>
+									<div class="post-title">
+										<h2>We Just Completes $17.6 Million Medical Clinic In Mid-Missouri</h2> </div>
+									<div class="post-entry-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+										<p>Kucididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+										<blockquote>
+											<p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. <cite>- Anger Mathe</cite> </p>
+										</blockquote>
+										<p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos quira tione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ue magnam aliquam quaerat voluptatem.</p>
 									</div>
-									<div><span class="icon mdi mdi-account"></span>
-										<time class="post-modern-time"
-										datetime="2020-09-08">{{__('blog.by')}}{{ $blog->author }}</time>
-									</div>
-								</div>
-								<h3 class="post-modern-title">{{ internation($blog, 'title') }}</h3><hr/>
-								<div class="post-modern-figure"><img src="{{ $blog->image }}" alt="" width="800"
-									height="394" />
-								</div>
-								<p class="post-modern-text">{!! internation($blog, 'text') !!}</p>
-							</article>
-							<!-- Quote Classic-->
-							<article class="quote-classic quote-classic-2">
-								<div class="quote-classic-text">
-									<div class="q">{{ $blog->tags }}</div>
-								</div>
-							</article>
-							<div class="single-post-bottom-panel">
-								<div class="group-sm group-justify">
-									<div>
-										<div class="group-xs group-middle"><span
-											class="list-social-title">{{__('blog.share')}}</span>
-											<div>
-												<ul class="list-inline list-social list-inline-sm">
-													<li><a title="Facebook" class="icon mdi mdi-facebook" href="" id="facebook-share-btt" rel="nofollow" target="_blank" class="facebook-share-button"></a></li>
-													<li><a title="Twitter" class="icon mdi mdi-twitter" href="" id="twitter-share-btt" rel="nofollow"
-														target="_blank" class="twitter-share-button"></a></li>
-														{{-- <li><a title="E-mail" class="icon mdi mdi-email" href="" id="mail-share-btt" rel="nofollow" target="_blank" class="mail-share-button"></a></li> --}}
-														<li><a title="Whatsapp" class="icon mdi mdi-whatsapp" href="" id="whatsapp-share-btt" rel="nofollow" target="_blank"></a></li>
-														{{-- <li><a class="icon mdi mdi-linkedin" href="" id="linkedin-share-btt" rel="nofollow" target="_blank" class="linkedin-share-button"></a></li> --}}
-														<li><a title="Telegram" class="icon mdi mdi-telegram" href="" id="telegram-share-btt" rel="nofollow" target="_blank" class="telegram-share-button"></a></li>
-														{{-- <li><a title="Pinterest" class="icon mdi mdi-pinterest" href="" id="pinterest-share-btt" rel="nofollow" target="_blank" class="pinterest-share-button"></a></li> --}}
-														{{-- <li><a class="icon mdi mdi-google-plus" href="" id="google-plus-share-btt" rel="nofollow" target="_blank" class="google-plus-share-button"></a></li> --}}
-													</ul>
-												</div>
-											</div>
+									<div class="tags-area d-flex align-item-center justify-content-between">
+										<div class="post-tags"> <a href="#">Construction</a> <a href="#">Safety</a> <a href="#">Planning</a> </div>
+										<div class="share-item">
+											<ul class="post-social-icons list-unstyled">
+												<li>Share:</li>
+												<li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+												<li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+												<li> <a href="#"><i class="fab fa-google-plus"></i></a> </li>
+												<li> <a href="#"><i class="fab fa-linkedin"></i></a> </li>
+											</ul>
 										</div>
 									</div>
 								</div>
+							</div>
+							<div class="author-box d-nlock d-sm-flex align-item-center">
+								<div class="author-img mb-4 mb-md-0"> <img src="../../assets/images/avator1.png" alt="img"> </div>
+								<div class="author-info">
+									<h3>Elton Themen <span>Site Engineer</span></h3>
+									<p class="mb-2">Lisicing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad vene minim veniam, quis nostrud exercitation nisi ex ea commodo.</p>
+									<p class="author-url mb-0">Website: <span><a href="#">http://www.example.com</a></span></p>
+								</div>
+							</div>
+							<div class="comments-area">
+								<h2 class="main-heading">Comments</h2>
+								<ul class="comments-list">
+									<li>
+										<div class="comment d-flex"> <img class="comment-avatar" src="../../assets/images/avator3.png" alt="img">
+											<div class="comment-body">
+												<div class="comment-meta-data"> <span class="comment-author">Michelle Aimber</span> <span class="comment-date-right float-right">January 17, 2016 at 1:38 pm</span> </div>
+												<div class="comment-content">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
+												</div>
+												<div class="text-left"> <a class="comment-reply" href="#">Reply</a> </div>
+											</div>
+										</div>
+										<ul class="comments-reply">
+											<li>
+												<div class="comment d-flex"> <img class="comment-avatar" src="../../assets/images/avator3.png" alt="img">
+													<div class="comment-body">
+														<div class="comment-meta-data"> <span class="comment-author">Michelle Aimber</span> <span class="comment-date-right float-right">January 17, 2016 at 1:38 pm</span> </div>
+														<div class="comment-content">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
+														</div>
+														<div class="text-left"> <a class="comment-reply" href="#">Reply</a> </div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<div class="comment d-flex last"> <img class="comment-avatar" src="../../assets/images/avator3.png" alt="img">
+											<div class="comment-body">
+												<div class="comment-meta-data"> <span class="comment-author">Michelle Aimber</span> <span class="comment-date-right float-right">January 17, 2016 at 1:38 pm</span> </div>
+												<div class="comment-content">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
+												</div>
+												<div class="text-left"> <a class="comment-reply" href="#">Reply</a> </div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="comment-form">
+								<h2 class="main-heading">Add a comment</h2>
+								<div class="form-inner">
+									<form>
+										<div class="row">
+											<div class="col-12 col-lg-4 col-md-4">
+												<div class="contact-form-group">
+													<label class="form-label">Name</label>
+													<input class="form-input" type="text" placeholder="Your Name"> </div>
+											</div>
+											<div class="col-12 col-lg-4 col-md-4">
+												<div class="contact-form-group">
+													<label class="form-label">Email</label>
+													<input class="form-input" type="text" placeholder="Your Email"> </div>
+											</div>
+											<div class="col-12 col-lg-4 col-md-4">
+												<div class="contact-form-group">
+													<label class="form-label">Subject</label>
+													<input class="form-input" type="text" placeholder="Your Subject"> </div>
+											</div>
+											<div class="col-12 col-lg-12 col-md-12">
+												<div class="contact-form-group">
+													<label class="form-label">Comment</label>
+													<textarea class="form-input-textarea" rows="6" placeholder="Your Comment"></textarea>
+												</div>
+											</div>
+											<div class="col-12 col-lg-12 col-md-12">
+												<div class="contact-form-group float-right">
+													<button type="submit" class="learn-more-btn float-right">post comment</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-3">
+						<div class="blog-sidebar-wrapper">
+							<div class="search-widget">
+								<form>
+									<div>
+										<input type="text" class="search-widget-input" placeholder="Search....">
+										<button type="submit" class="search-widget-btn"><i class="material-icons">search</i></button>
+									</div>
+								</form>
+							</div>
+							<div class="categories-widget">
+								<h3 class="heading-widget">Categories</h3>
+								<hr>
+								<ul>
+									<li><a href="#">Residential Building</a></li>
+									<li><a href="#">Institutional and Commercial Building</a></li>
+									<li><a href="#">Specialized Industrial Construction</a></li>
+									<li><a href="#">Ordinary Construction</a></li>
+									<li><a href="#">Heavy-Timber Construction</a></li>
+								</ul>
+							</div>
+							<div class="recent-post-widget">
+								<h3 class="heading-widget">Recent Posts</h3>
+								<hr>
+								<div class="post">
+									<a href="#"> <img src="../../assets/images/img/news-1.jpg" alt="img"> </a>
+									<h4><a href="#">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        </a></h4> <span class="date">April 20, 2021</span> </div>
+								<div class="post">
+									<a href="#"> <img src="../../assets/images/img/news-3.jpg" alt="img"> </a>
+									<h4><a href="#">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        </a></h4> <span class="date">April 20, 2021</span> </div>
+							</div>
+							<div class="tags-widget">
+								<h3 class="heading-widget">Popular Tags</h3>
+								<hr>
+								<div> <a href="#">Exterior</a> <a href="#">Structural</a> <a href="#">Floor</a> <a href="#">Ceiling</a> <a href="#">Roof</a> <a href="#">Heavy Timber</a> <a href="#">Wood Frame</a> <a href="#">House</a> </div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<script>
-			//Constrói a URL depois que o DOM estiver pronto FACEBOOK
-			document.addEventListener("DOMContentLoaded", function() {
-				//altera a URL do botão
-				document.getElementById("facebook-share-btt").href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href);
-			}, false);
-
-			//Constrói a URL depois que o DOM estiver pronto TWITTER
-			document.addEventListener("DOMContentLoaded", function() {
-				var url = encodeURIComponent(window.location.href);
-				var titulo = encodeURIComponent(document.title);
-				//var via = encodeURIComponent("usuario-twitter"); //nome de usuário do twitter do seu site
-				//altera a URL do botão
-				document.getElementById("twitter-share-btt").href = "https://twitter.com/intent/tweet?url=" + url +
-				"&text=" + titulo;
-
-				//se for usar o atributo via, utilize a seguinte url
-				//document.getElementById("twitter-share-btt").href = "https://twitter.com/intent/tweet?url="+url+"&text="+titulo+"&via="+via;
-			}, false);
-
-			//Constrói a URL depois que o DOM estiver pronto EMAIL
-			document.addEventListener("DOMContentLoaded", function() {
-				var url = window.location.href; //url
-				var title = encodeURIComponent(document.title); //título
-				var mailToLink = "mailto:?subject="+title;
-
-				//tenta obter o conteúdo da meta tag description
-				var desc = document.querySelector("meta[name='description']");
-				desc = (!!desc)? desc.getAttribute("content") : null;
-
-				//se a meta tag description estiver ausente...
-				if(!desc){
-					//...tenta obter o conteúdo da meta tag og:description
-					desc = document.querySelector("meta[property='og:description']");
-					desc = (!!desc)? desc.getAttribute("content") : null;
-				}
-				//Se houver descrição, combina a descrição com a url
-				//senão o corpo da mensagem terá apenas a url
-				var body = (!!desc)? desc + " " + url : url;
-				//altera o link do botão
-				mailToLink = mailToLink + "&body=" + encodeURIComponent(body);
-				document.getElementById("mail-share-btt").href = mailToLink;
-			}, false);
-
-			//Constrói a URL depois que o DOM estiver pronto WHASTAPP
-			document.addEventListener("DOMContentLoaded", function() {
-				//conteúdo que será compartilhado: Título da página + URL
-				var conteudo = encodeURIComponent(document.title + " " + window.location.href);
-				//altera a URL do botão
-				document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
-			}, false);
-
-			//Constrói a URL depois que o DOM estiver pronto LINKEDIN
-			document.addEventListener("DOMContentLoaded", function() {
-				var url = encodeURIComponent(window.location.href); //url
-				var titulo = encodeURIComponent(document.title); //título
-				var linkedinLink = "https://www.linkedin.com/shareArticle?mini=true&url="+url+"&title="+titulo;
-
-				//tenta obter o conteúdo da meta tag description
-				var summary = document.querySelector("meta[name='description']");
-				summary = (!!summary)? summary.getAttribute("content") : null;
-
-				//se a meta tag description estiver ausente...
-				if(!summary){
-					//...tenta obter o conteúdo da meta tag og:description
-					summary = document.querySelector("meta[property='og:description']");
-					summary = (!!summary)? summary.getAttribute("content") : null;
-				}
-				//altera o link do botão
-				linkedinLink = (!!summary)? linkedinLink + "&summary=" + encodeURIComponent(summary) : linkedinLink;
-				document.getElementById("linkedin-share-btt").href = linkedinLink;
-			}, false);
-
-
-			//Constrói a URL depois que o DOM estiver pronto TELEGRAM
-			document.addEventListener("DOMContentLoaded", function() {
-				var url = encodeURIComponent(window.location.href); //url
-				var title = encodeURIComponent(document.title); //título
-				var telegramLink = 'https://telegram.me/share/url?url=' + url + '&text=' + title;
-				document.getElementById("telegram-share-btt").href = telegramLink;
-			}, false);
-
-			//Constrói a URL depois que o DOM estiver pronto PINTEREST
-			document.addEventListener("DOMContentLoaded", function() {
-				var url = encodeURIComponent(window.location.href);
-
-				//tenta obter o conteúdo da meta tag description
-				var desc = document.querySelector("meta[name='description']");
-				desc = (!!desc)? desc.getAttribute("content") : null;
-
-				//se a meta tag description estiver ausente...
-				if(!desc){
-					//...tenta obter o conteúdo da meta tag og:description
-					desc = document.querySelector("meta[property='og:description']");
-					desc = (!!desc)? desc.getAttribute("content") : null;
-				}
-
-				//metas tags description e og:description ausentes
-				if(!desc){
-					//obtém title
-					desc = document.title;
-				}
-
-				//altera a URL do botão
-				document.getElementById("pinterest-share-btt").href = "https://www.pinterest.com/pin/create/button/?url="+url+"&description="+encodeURIComponent(desc);
-			}, false);
-
-		</script>
-
-	</section>
-	@endforeach
+		</section>
+	</div>
+	<!-- content end -->

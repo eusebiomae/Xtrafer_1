@@ -17,7 +17,7 @@ class BlogCategoryController extends BaseMethodController {
 
 		$this->config = (object) [
 			'pathView' => 'admin/configuration/blog/category',
-			'urlAction' => 'admin/configuration/blog/category',
+			'urlAction' => 'admin/blog/category',
 		];
 	}
 

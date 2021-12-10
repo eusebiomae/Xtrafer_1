@@ -755,8 +755,8 @@ Route::group([ 'middleware' => [ 'auth:admin' ] ], function() {
 	Route::group([ 'prefix' => 'blog' ], function () {
 
 		Route::group([ 'prefix' => 'category' ], function () {
-			$ctrll = 'Admin\BlogCategoryController@';
-			$name = 'admin.blog.category';
+			$ctrll = 'Admin\Configuration\BlogCategoryController@';
+			$name = 'admin.configuration.blog.category';
 
 			Route::get('', "{$ctrll}list")->name($name);
 			Route::get('insert', "{$ctrll}insert")->name($name);

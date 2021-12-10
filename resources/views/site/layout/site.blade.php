@@ -100,9 +100,9 @@
                                     <!-- <li><a href="pages/brands.html">Produtos</a></li> -->
                                     <!-- <li><a href="pages/brands.html">Treinamento</a></li> -->
                                     <!-- <li><a href="pages/faq.html">FAQ</a></li> -->
-                                    <li><a href="pages/team.html">Nosso Time</a></li>
-                                    <li><a href="pages/news/news-1.html">Blog</a></li>
-                                    <li class="sub-menu-parent"> <a href="pages/contact-us.html">Contato</a> </li>
+                                    <li><a href="/#experts">Nosso Time</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li class="sub-menu-parent"> <a href="/contact">Contato</a> </li>
                                 </ul>
                             </nav>
                         </div>

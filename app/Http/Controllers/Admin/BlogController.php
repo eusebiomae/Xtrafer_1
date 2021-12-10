@@ -31,7 +31,7 @@ class BlogController extends BaseMethodController {
 		$list = (object) [];
 
 		$list->blogCategory = (new BlogCategoryModel())->get();
-		$list->author = DB::table('user')->where('author', 'S')->get();
+		// $list->author = DB::table('user')->where('author', 'S')->get();
 		$list->status = BlogModel::getStatusList();
 
 		return $list;
@@ -79,10 +79,10 @@ class BlogController extends BaseMethodController {
 				'label' => 'Data',
 				'column' => 'created_at',
 			],
-			// (object) [
-			// 	'label' => 'Autor',
-			// 	'column' => 'author.name',
-			// ],
+			(object) [
+				'label' => 'Autor',
+				'column' => 'author.name',
+			],
 		];
 
 		$dataTableA->data = $mapData['article'];

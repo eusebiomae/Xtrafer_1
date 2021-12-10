@@ -34,7 +34,7 @@
   <div class="row">
     <div class="col-lg-11"></div>
     <div class="col-lg-1" style="padding-bottom: 10px;">
-      <a href="{{ url('/admin/configuration/blog/category/insert') }}">
+      <a href="{{ url('/admin/blog/category/insert') }}">
         <button class="btn btn-primary"><i class="fa fa-plus"></i> Novo</button>
       </a>
     </div>

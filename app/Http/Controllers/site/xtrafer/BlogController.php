@@ -5,7 +5,9 @@ namespace App\Http\Controllers\site\xtrafer;
 use App\Model\api\BlogModel;
 use Illuminate\Http\Request;
 use App\Model\api\Configuration\ContentPageModel;
+use App\Model\api\FeatureModel;
 use App\Model\api\Prospection\CourseModel;
+use App\Model\api\SlideModel;
 
 class BlogController extends _Controller
 {
@@ -18,10 +20,13 @@ class BlogController extends _Controller
 
 		$blogs = BlogModel::get();
 
+		$blog_home = BlogModel::get();
+
 		// return $pageComponents;
-		return view('site/bookbox/pages/default')
+		return view('site/pages/default')
 			->with('flgPage', $flgPage)
 			->with('pageComponents', $pageComponents)
+			->with('blog_home', $blog_home)
 			->with('blogs', $blogs);
 	}
 
@@ -35,7 +40,7 @@ class BlogController extends _Controller
 
 		// return $blog;
 
-		return view ('site/bookbox/pages/blog_post_details')
+		return view ('site/pages/blog_details')
 		->with('flgPage', $flgPage)
 		->with('pageComponents', $pageComponents)
 		->with('blog', $blog);
