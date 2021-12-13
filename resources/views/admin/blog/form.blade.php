@@ -55,7 +55,7 @@
 						@if ($fieldPageConfig->show('blog_category'))
 							<div class="col-sm-3">
 								<label class="control-label">Categoria*</label>
-								<select onchange="typeBlog(this.value)" class="form-control m-b" {!! $fieldPageConfig->attr('title') !!}>
+								{{-- <select onchange="typeBlog(this.value)" class="form-control m-b" {!! $fieldPageConfig->attr('title') !!}> --}}
 
 								<select id="blog_category_id" name="blog_category_id" class="form-control m-b" {!! $fieldPageConfig->attr('blog_category_id') !!}>
 									{{-- <option value="blog">Notícias</option>
@@ -65,10 +65,10 @@
 							</div>
 						@endif
 
-						@if ($fieldPageConfig->show('author_post'))
+						@if ($fieldPageConfig->show('author_post_'))
 							<div class="col-sm-2">
 								<label class="control-label">Autor*</label>
-								<input id="author_post" name="author_post" class="form-control m-b" {!! $fieldPageConfig->attr('author_post') !!}>
+								<input id="author_post" name="author_post_" class="form-control m-b" {!! $fieldPageConfig->attr('author_post_') !!}>
 									{{-- @foreach($listSelectBox->author as $item)
 									<option value="{{ $item->id }}">{{ $item->name }}</option>
 									@endforeach --}}

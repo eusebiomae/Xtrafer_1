@@ -39,7 +39,7 @@
 								return '<a href="'+ column.btnUpd +'/update/'+ row.id + '"><i class="fas fa-pencil-alt" title="Editar"></i></a>'
 							}
 
-							return ''
+							return [],
 						}
 					} else
 					if (column.btnDel) {

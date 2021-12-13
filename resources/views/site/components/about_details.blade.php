@@ -5,11 +5,11 @@
 				<div class="row justify-content-center">
 					<div class="col-12 col-lg-5">
 						<div class="breadcrumb-wrapper">
-							<h2>About Us</h2>
+							<h2>Sobre nós</h2>
 							<nav>
 								<ul>
 									<li class="breadcrumb-item"><a href="#">Home</a></li>
-									<li class="breadcrumb-item active"><a href="#">About Us</a></li>
+									<li class="breadcrumb-item active"><a href="#">Sobre nós</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -22,18 +22,18 @@
 				<div class="row row-eq-height">
 					<div class="col-12 col-lg-6 col-md-6">
 						<div class="company-overview-wrapper">
-							<h2 class="main-heading m-0">company overview</h2>
+							<h2 class="main-heading m-0">visão geral da empresa</h2>
 							<hr>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="company-overview-features">
 								<div class="overview-feature-item"> <img src="../assets/images/safety.png" alt="img">
-									<h2 class="sub-heading-medium-cap">we use most heigh technology</h2> </div>
+									<h2 class="sub-heading-medium-cap">usamos a mais alta tecnología</h2> </div>
 								<div class="overview-feature-item"> <img src="../assets/images/safety.png" alt="img">
-									<h2 class="sub-heading-medium-cap">save unusual time and money</h2> </div>
+									<h2 class="sub-heading-medium-cap">melhores preços do mercado</h2> </div>
 								<div class="overview-feature-item"> <img src="../assets/images/safety.png" alt="img">
-									<h2 class="sub-heading-medium-cap">no compromise with quality</h2> </div>
+									<h2 class="sub-heading-medium-cap">comprometidos com a qualidade</h2> </div>
 								<div class="overview-feature-item"> <img src="../assets/images/safety.png" alt="img">
-									<h2 class="sub-heading-medium-cap">we have that best experience</h2> </div>
+									<h2 class="sub-heading-medium-cap">experts sempre atualizados</h2> </div>
 							</div>
 						</div>
 					</div>
@@ -54,15 +54,15 @@
 				<div class="row">
 					<div class="col-12 col-lg-6 col-md-6 item">
 						<div class="company-overview-wrapper">
-							<h2 class="main-heading m-0">our work system</h2>
+							<h2 class="main-heading m-0">nosso sistema de trabalho</h2>
 							<hr>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6 col-md-6">
+					<div class="col-12 col-lg-6 col-md-6" id="faq">
 						<div class="company-overview-wrapper">
-							<h2 class="main-heading m-0">you should know</h2>
+							<h2 class="main-heading m-0">perguntas frequentes</h2>
 							<hr>
 							<div class="collapse-paneel-wrapper">
 								<div class="accordion" id="accordionExample">
@@ -70,7 +70,7 @@
 										<div class="card-header" id="headingOne">
 											<h5 class="mb-0">
                                               <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                How I Download The App?
+                                                O que é Lorem Ipsum?
                                                 <i class="material-icons">expand_more</i>
                                               </button>
 
@@ -83,7 +83,7 @@
 										<div class="card-header" id="headingTwo">
 											<h5 class="mb-0">
                                               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Process Of Install The App?
+                                                Para que usamos?
                                                 <i class="material-icons">expand_more</i>
                                               </button>
 
@@ -96,7 +96,7 @@
 										<div class="card-header" id="headingThree">
 											<h5 class="mb-0">
                                               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                How Can I Update Plan?
+																								De onde vem?
                                                 <i class="material-icons">expand_more</i>
                                               </button>
 
@@ -117,7 +117,7 @@
 				<div class="row">
 					<div class="col-12 col-lg-5 item">
 						<div class="about-client-wrapper">
-							<h2 class="about-client-heading">We Are Always Dedicated And Devoted With Clients.</h2>
+							<h2 class="about-client-heading">Siempre dedicados a servir nossos clientes.</h2>
 							<p class="about-client-des">There are many variations of passages of Lorem Ipsum available the majority have suffered alteration in some form by injected humour.</p>
 						</div>
 					</div>
@@ -125,15 +125,15 @@
 						<div class="about-client-counter-wrapper">
 							<div class="about-client-counter-item item">
 								<h2>136</h2>
-								<p>Team Member</p>
+								<p>Membros de Equipe</p>
 							</div>
 							<div class="about-client-counter-item item">
 								<h2>1806</h2>
-								<p>Total Clients</p>
+								<p>Clientes Satisfeitos</p>
 							</div>
 							<div class="about-client-counter-item item">
 								<h2>1066</h2>
-								<p>Project Done</p>
+								<p>Projetos finalizados</p>
 							</div>
 						</div>
 					</div>
@@ -145,8 +145,8 @@
 				<div class="row justify-content-center">
 					<div class="col-12 col-lg-7">
 						<div class="main-heading-block">
-							<h2 class="main-heading">Meet our Team</h2>
-							<p>t is a long established fact that a reader will be distracted by the readable content page when looking at its layout the point of using Lorem</p>
+							<h2 class="main-heading">Conheça nosso time</h2>
+							{{-- <p>t is a long established fact that a reader will be distracted by the readable content page when looking at its layout the point of using Lorem</p> --}}
 						</div>
 					</div>
 				</div>
@@ -157,10 +157,9 @@
 								<div class="content-experts-overlay"></div> <img class="content-experts-image" src="../assets/images/our-team-1.jpg" alt="team">
 								<div class="content-experts-details fadeIn-bottom">
 									<ul>
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+										<li title="Telefone"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+										<li title="Email"><a href="#"><i class="fas fa-at"></i></a></li>
+										<li title="Whatsapp"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -176,10 +175,9 @@
 								<div class="content-experts-overlay"></div> <img class="content-experts-image" src="../assets/images/our-team-2.jpg" alt="team">
 								<div class="content-experts-details fadeIn-bottom">
 									<ul>
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+										<li title="Telefone"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+										<li title="Email"><a href="#"><i class="fas fa-at"></i></a></li>
+										<li title="Whatsapp"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -195,10 +193,9 @@
 								<div class="content-experts-overlay"></div> <img class="content-experts-image" src="../assets/images/our-team-3.jpg" alt="team">
 								<div class="content-experts-details fadeIn-bottom">
 									<ul>
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+										<li title="Telefone"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+										<li title="Email"><a href="#"><i class="fas fa-at"></i></a></li>
+										<li title="Whatsapp"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -214,10 +211,9 @@
 								<div class="content-experts-overlay"></div> <img class="content-experts-image" src="../assets/images/our-team-4.jpg" alt="team">
 								<div class="content-experts-details fadeIn-bottom">
 									<ul>
-										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+										<li title="Telefone"><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+										<li title="Email"><a href="#"><i class="fas fa-at"></i></a></li>
+										<li title="Whatsapp"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 									</ul>
 								</div>
 							</div>

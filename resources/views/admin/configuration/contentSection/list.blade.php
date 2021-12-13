@@ -18,7 +18,7 @@
         <a href="#">Configurações</a>
       </li>
       <li>
-        <a href="{{ url('/admin/configuration/contentsection') }}">Seções de Paginas</a>
+        <a href="{{ url('/admin/contentsection') }}">Seções de Paginas</a>
       </li>
       <li class="active">
         <strong>Listar Seções</strong>

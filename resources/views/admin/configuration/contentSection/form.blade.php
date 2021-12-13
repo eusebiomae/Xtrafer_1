@@ -139,7 +139,7 @@
 @section('scripts')
 @parent
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+	document.addEventListener('DOMContentLoaded', function() {
 	try {
 		APP.scope.contentSection = <?=isset($data) ? json_encode($data) : 'null'?>;
 

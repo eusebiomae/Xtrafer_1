@@ -5,11 +5,11 @@
 				<div class="row justify-content-center">
 					<div class="col-12 col-lg-5">
 						<div class="breadcrumb-wrapper">
-							<h2>Blog Grid News</h2>
+							<h2>Blogs</h2>
 							<nav>
 								<ul>
-									<li class="breadcrumb-item"><a href="#">Home</a></li>
-									<li class="breadcrumb-item active"><a href="#">News</a></li>
+									<li class="breadcrumb-item"><a href="/">Home</a></li>
+									<li class="breadcrumb-item active"><a href="#">Blogs</a></li>
 								</ul>
 							</nav>
 						</div>

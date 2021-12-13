@@ -6,9 +6,8 @@ use App\Http\Controllers\site\xtrafer\_Controller;
 use Illuminate\Http\Request;
 use App\Model\api\Configuration\ContentPageModel;
 use App\Model\api\SlideModel;
-use App\Model\api\TeamModel;
 
-class PrivacyController extends _Controller
+class TermController extends _Controller
 {
 	/**
 	* Display a listing of the resource.
@@ -21,11 +20,9 @@ class PrivacyController extends _Controller
 
 		$pageComponents = ContentPageModel::getByComponent($flgPage);
 
-		// return $pageComponents;
-		// return $flgPage;
-
 		return view('site/pages/default')
 		->with('flgPage', $flgPage)
 		->with('pageComponents', $pageComponents);
+
 	}
 }

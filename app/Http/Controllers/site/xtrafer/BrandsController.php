@@ -2,24 +2,22 @@
 
 namespace App\Http\Controllers\site\xtrafer;
 
-use App\Http\Controllers\site\xtrafer\_Controller;
 use Illuminate\Http\Request;
-use App\Model\api\Configuration\ContentPageModel;
+use App\Model\api\SchoolInformationModel;
 use App\Model\api\SlideModel;
 use App\Model\api\TeamModel;
+use App\Model\api\Configuration\ContentPageModel;
 
-class PrivacyController extends _Controller
+
+class BrandsController extends _Controller
 {
-	/**
-	* Display a listing of the resource.
-	*
-	* @return \Illuminate\Http\Response
-	*/
+
 	public function index(Request $request)
 	{
 		$flgPage = $request->get('flgPage');
 
 		$pageComponents = ContentPageModel::getByComponent($flgPage);
+
 
 		// return $pageComponents;
 		// return $flgPage;

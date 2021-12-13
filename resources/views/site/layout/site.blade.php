@@ -85,7 +85,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-8 col-md-5">
                         <div class="header-logo">
-                            <a href="index.html"> <img src="assets/images/construct-logo.png" alt="logo"> </a>
+                            <a href="/"> <img src="assets/images/construct-logo.png" alt="logo"> </a>
                         </div>
                     </div>
                     <div class="col-lg-9 d-none d-lg-block">
@@ -96,7 +96,7 @@
                                 <ul>
                                     <li class="sub-menu-parent"> <a href="/">Home</a> </li>
                                     <li class="sub-menu-parent"> <a href="/about_details">Xtra-fer</a> </li>
-                                    <li><a href="pages/brands.html">Distribuição</a></li>
+                                    <li><a href="/brands">Distribuição</a></li>
                                     <!-- <li><a href="pages/brands.html">Produtos</a></li> -->
                                     <!-- <li><a href="pages/brands.html">Treinamento</a></li> -->
                                     <!-- <li><a href="pages/faq.html">FAQ</a></li> -->

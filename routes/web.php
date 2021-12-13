@@ -47,7 +47,9 @@ Route::get('support', 'site\xtrafer\SupportController@index')->middleware(['inje
 
 Route::get('manual', 'site\xtrafer\ManualController@index')->middleware(['injectFlgPage:manual']);
 
-Route::get('term', 'site\xtrafer\TermController@index')->name('term')->middleware(['injectFlgPage:term']);
+Route::get('terms', 'site\xtrafer\TermController@index')->name('terms')->middleware(['injectFlgPage:terms']);
+
+Route::get('brands', 'site\xtrafer\BrandsController@index')->name('brands')->middleware(['injectFlgPage:brands']);
 
 Route::get('privacy', 'site\xtrafer\PrivacyController@index')->name('privacy')->middleware(['injectFlgPage:privacy']);
 
@@ -60,6 +62,7 @@ Route::post('register', 'site\xtrafer\RegisterController@store');
 Route::get('lang/{lang}', 'site\xtrafer\LanguageController@switchLang')->name('lang.switch');
 
 Route::get('/bilingualism', 'site\xtrafer\BilingualismController@index');
+
 Route::post('sendContact', 'site\xtrafer\EmailController@contact');
 
 // Route::get('/test', function () {

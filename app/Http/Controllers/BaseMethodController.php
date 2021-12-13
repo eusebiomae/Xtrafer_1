@@ -100,6 +100,7 @@ class BaseMethodController extends Controller {
 			} else {
 				$dataFind = $this->apiModel::find($request->id);
 
+
 				if (is_null($dataFind)) {
 					return redirect()->back();
 				}
