@@ -50,6 +50,10 @@ class BlogModel extends Model {
 		return $this->belongsTo('\App\Model\api\Configuration\BlogCategoryModel', 'blog_category_id');
 	}
 
+	public function blogCategory() {
+		return $this->belongsTo('\App\Model\api\Configuration\BlogCategoryModel', 'blog_category_id');
+	}
+
 	public function author() {
 		return $this->belongsTo('\App\Model\api\UserModel', 'author_post');
 	}

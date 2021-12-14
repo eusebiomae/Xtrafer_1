@@ -18,15 +18,18 @@ class BlogController extends _Controller
 
 		$pageComponents = ContentPageModel::getByComponent($flgPage);
 
-		$blogs = BlogModel::get();
+		$blogs = BlogModel::with(['blogCategory' => function($query){$query->select('id', 'description_pt');}])->orderBy('created_at', 'desc')->get();
 
-		$blog_home = BlogModel::get();
+		$blog_home = BlogModel::orderBy('created_at', 'desc')->limit(2)->get();
+
+		$blog_right = BlogModel::orderBy('created_at', 'asc')->limit(2)->get();
 
 		// return $pageComponents;
 		return view('site/pages/default')
 			->with('flgPage', $flgPage)
 			->with('pageComponents', $pageComponents)
 			->with('blog_home', $blog_home)
+			->with('blog_right', $blog_right)
 			->with('blogs', $blogs);
 	}
 
@@ -38,7 +41,8 @@ class BlogController extends _Controller
 
 		$blog = BlogModel::find($id);
 
-		// return $blog;
+
+		// return $pageComponents;
 
 		return view ('site/pages/blog_details')
 		->with('flgPage', $flgPage)

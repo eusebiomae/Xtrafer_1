@@ -1,4 +1,5 @@
 	<!-- content start -->
+	{{-- @foreach ($pageData->content as $item) --}}
 	<div class="main-content-wrapper">
 		<section class="breadcrumb-section about">
 			<div class="container">
@@ -17,92 +18,35 @@
 				</div>
 			</div>
 		</section>
+		{{-- @foreach ($pageData->content as $item) --}}
 		<section class="section">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-9">
 						<div class="row">
+							@foreach ($blogs as $blog)
 							<div class="col-12 col-lg-6 col-md-6 item">
 								<div class="grid-news-wrapper">
 									<div class="grid-news-item">
-										<div class="grid-news-img"> <img src="../../assets/images/img/news-1.jpg" alt="img"> </div>
+										<div class="grid-news-img"> <img src="{{$blog->image}}" alt="img"> </div>
 										<div class="grid-news-info">
-											<h2>There Are Many Variations Reader Will Be Distracted.</h2>
+											<h2>{{$blog->title_pt}}</h2>
 											<div class="grid-news-action-info">
-												<div class="grid-news-action-list"> <span><i class="material-icons">calendar_today</i></span>
-													<p>Nov 19, 2019</p>
+												<div class="grid-news-action-list"> <span><i class="material-icons">category</i></span>
+													<p>{{$blog->blogCategory->description_pt}}</p>
 												</div>
-												<div class="grid-news-action-list"> <span><i class="material-icons">comment</i></span>
-													<p>9 Comments</p>
+												<div class="grid-news-action-list"> <span><i class="material-icons">calendar_today</i></span>
+													<p>{{$blog->scheduling_date}}</p>
 												</div>
 											</div>
-											<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+											<p>{{$blog->subtitle_pt}}</p>
 										</div>
-										<div class="grid-news-button"> <a href="blog_details/{id}" class="news-read-more-btn">Read More</a> </div>
+										<div class="grid-news-button"> <a href="blog_details/{{$blog->id}}" class="news-read-more-btn">Ler mais...</a> </div>
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-lg-6 col-md-6 item">
-								<div class="grid-news-wrapper">
-									<div class="grid-news-item">
-										<div class="grid-news-img"> <img src="../../assets/images/img/news-2.jpg" alt="img"> </div>
-										<div class="grid-news-info">
-											<h2>There Are Many Variations Reader Will Be Distracted.</h2>
-											<div class="grid-news-action-info">
-												<div class="grid-news-action-list"> <span><i class="material-icons">calendar_today</i></span>
-													<p>Nov 19, 2019</p>
-												</div>
-												<div class="grid-news-action-list"> <span><i class="material-icons">comment</i></span>
-													<p>9 Comments</p>
-												</div>
-											</div>
-											<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-										</div>
-										<div class="grid-news-button"> <a href="blog_details/{id}" class="news-read-more-btn">Read More</a> </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-lg-6 col-md-6 item">
-								<div class="grid-news-wrapper">
-									<div class="grid-news-item">
-										<div class="grid-news-img"> <img src="../../assets/images/img/news-3.jpg" alt="img"> </div>
-										<div class="grid-news-info">
-											<h2>There Are Many Variations Reader Will Be Distracted.</h2>
-											<div class="grid-news-action-info">
-												<div class="grid-news-action-list"> <span><i class="material-icons">calendar_today</i></span>
-													<p>Nov 19, 2019</p>
-												</div>
-												<div class="grid-news-action-list"> <span><i class="material-icons">comment</i></span>
-													<p>9 Comments</p>
-												</div>
-											</div>
-											<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-										</div>
-										<div class="grid-news-button"> <a href="blog_details/{id}" class="news-read-more-btn">Read More</a> </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-lg-6 col-md-6 item">
-								<div class="grid-news-wrapper">
-									<div class="grid-news-item">
-										<div class="grid-news-img"> <img src="../../assets/images/img/news-1.jpg" alt="img"> </div>
-										<div class="grid-news-info">
-											<h2>There Are Many Variations Reader Will Be Distracted.</h2>
-											<div class="grid-news-action-info">
-												<div class="grid-news-action-list"> <span><i class="material-icons">calendar_today</i></span>
-													<p>Nov 19, 2019</p>
-												</div>
-												<div class="grid-news-action-list"> <span><i class="material-icons">comment</i></span>
-													<p>9 Comments</p>
-												</div>
-											</div>
-											<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-										</div>
-										<div class="grid-news-button"> <a href="blog_details/{id}" class="news-read-more-btn">Read More</a> </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
+							@endforeach
+							{{-- <div class="col-12">
 								<div class="grid-news-paggination">
 									<ul>
 										<li><a href="#"><span>Prev</span></a></li>
@@ -114,7 +58,7 @@
 										<li><a href="#"><span>Next</span></a></li>
 									</ul>
 								</div>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 					<div class="col-12 col-lg-3">
@@ -128,29 +72,24 @@
 								</form>
 							</div>
 							<div class="categories-widget">
-								<h3 class="heading-widget">Categories</h3>
+								<h3 class="heading-widget">Categorias</h3>
 								<hr>
 								<ul>
-									<li><a href="#">Residential Building</a></li>
-									<li><a href="#">Institutional and Commercial Building</a></li>
-									<li><a href="#">Specialized Industrial Construction</a></li>
-									<li><a href="#">Ordinary Construction</a></li>
-									<li><a href="#">Heavy-Timber Construction</a></li>
+									<li><a href="{{$blog->blogCategory->description_pt}}">Ferramentas</a></li>
+									<li><a href="{{$blog->blogCategory->description_pt}}">Industria</a></li>
+									<li><a href="{{$blog->blogCategory->description_pt}}">Logística</a></li>
+									<li><a href="{{$blog->blogCategory->description_pt}}">Treinamentos</a></li>
 								</ul>
 							</div>
 							<div class="recent-post-widget">
-								<h3 class="heading-widget">Recent Posts</h3>
+								<h3 class="heading-widget">Posts Mais Antigos</h3>
 								<hr>
+								@foreach ($blog_right as $item)
 								<div class="post">
-									<a href="../../pages/news/single-news.html"> <img src="../../assets/images/img/news-2.jpg" alt="img"> </a>
-									<h4><a href="../../pages/news/single-news.html">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                                        </a></h4> <span class="date">April 20, 2021</span> </div>
-								<div class="post">
-									<a href="../../pages/news/single-news.html"> <img src="../../assets/images/img/news-3.jpg" alt="img"> </a>
-									<h4><a href="../../pages/news/single-news.html">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                                        </a></h4> <span class="date">April 20, 2021</span> </div>
+									<a href="blog_details/{{$blog->id}}"> <img src="{{$item->image}}" alt="img"> </a>
+									<h4><a href="blog_details/{{$blog->id}}">{{$item->title_pt}}</a></h4> <span class="date">{{$item->scheduling_date}}</span>
+								</div>
+								@endforeach
 							</div>
 							<div class="tags-widget">
 								<h3 class="heading-widget">Popular Tags</h3>
@@ -162,5 +101,6 @@
 				</div>
 			</div>
 		</section>
+		{{-- @endforeach --}}
 	</div>
 	<!-- content end -->

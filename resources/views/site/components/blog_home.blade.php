@@ -10,69 +10,54 @@
 					</div>
 			</div>
 			<div class="row">
-					<div class="col-12 col-lg-6 item">
+				<div class="col-12 col-lg-6 item">
+						@foreach ($blog_home as $blog_home)
 							<div class="construction-news-wrapper">
-									<div class="construction-news-img"> <img src="assets/images/img/news-1.jpg" alt="img">
+								<a href="blog_details/{{$blog_home->id}}" class="news-read-more-btn">
+									<div class="construction-news-img"> <img src="{{$blog_home->image}}" alt="img">
 											<div class="date-box">
-													<p>17</p>
-													<p>APR</p>
+													<p>{{$blog_home->scheduling_date}}</p>
 											</div>
 									</div>
+								</a>
 									<div class="construction-new-info">
-											<h2>Projetos para Desenho Industrial</h2>
-											<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
+											<h2>{{$blog_home->title_pt}}</h2>
+											<p>{{$blog_home->subtitle_pt}}</p>
 									</div>
 									<div class="construction-news-action">
-											<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comentários</span> </div>
-											<div class="connews-action-box"> <i class="material-icons">person</i> <span>Mario</span> </div>
+											<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>{{$blog_home->blogCategory->description_pt}}</span> </div>
+											{{-- <div class="connews-action-box"> <i class="material-icons">person</i> <span>Mario</span> </div> --}}
 									</div>
 							</div>
+						@endforeach
 					</div>
 					<div class="col-12 col-lg-6 item">
+						@foreach ($blog_right as $item)
 							<div class="construction-news-wrapper">
 									<div class="consnews-right-img">
-											<div class="construction-news-img"> <img src="assets/images/img/news-2.jpg" alt="img">
+										<a href="blog_details/{{$blog_home->id}}" class="news-read-more-btn">
+											<div class="construction-news-img"> <img src="{{$item->image}}" alt="img">
 													<div class="date-box">
-															<p>17</p>
+															<p>{{$item->scheduling_date}}</p>
 															<p>APR</p>
 													</div>
 											</div>
+										</a>
 									</div>
 									<div class="consnews-right-info">
 											<div class="construction-new-info">
-													<h2>Atualizações e novas tecnologias</h2>
+													<h2>{{$item->title_pt}}</h2>
 											</div>
 											<div class="construction-news-action">
-													<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comentários</span> </div>
-													<div class="connews-action-box"> <i class="material-icons">person</i> <span>Mario</span> </div>
+													<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>{{$item->blogCategory->description_pt}}</span> </div>
+													{{-- <div class="connews-action-box"> <i class="material-icons">person</i> <span>Mario</span> </div> --}}
 											</div>
 											<div class="construction-new-info">
-													<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
+													<p>{{$item->subtitle_pt}}</p>
 											</div>
 									</div>
 							</div>
-							<div class="construction-news-wrapper">
-									<div class="consnews-right-img">
-											<div class="construction-news-img"> <img src="assets/images/img/news-3.jpg" alt="img">
-													<div class="date-box">
-															<p>17</p>
-															<p>APR</p>
-													</div>
-											</div>
-									</div>
-									<div class="consnews-right-info">
-											<div class="construction-new-info">
-													<h2>Treinamentos e Estagios</h2>
-											</div>
-											<div class="construction-news-action">
-													<div class="connews-action-box"> <i class="material-icons">chat_bubble_outline</i> <span>Comentários</span> </div>
-													<div class="connews-action-box"> <i class="material-icons">person</i> <span>Mario</span> </div>
-											</div>
-											<div class="construction-new-info">
-													<p>Lorem ipsum dolor sit amet, consectetur adipimagna aliqua. Ut minim veniam. Aenean massa. Cumus et magnis dis partu rient to montes. Cum sociis natoque penatibus.</p>
-											</div>
-									</div>
-							</div>
+						@endforeach
 					</div>
 			</div>
 	</div>
