@@ -42,7 +42,7 @@ class BlogController extends _Controller
 		$blog = BlogModel::find($id);
 
 
-		// return $pageComponents;
+		// return $blog;
 
 		return view ('site/pages/blog_details')
 		->with('flgPage', $flgPage)

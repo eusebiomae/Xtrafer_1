@@ -1,6 +1,7 @@
 <!-- Footer Default-->
 <footer class="section novi-bg novi-bg-img page-footer page-footer-default text-start bg-gray-darker section-way-point"
-    data-preset='{"title":"Footer light 2","category":"footer, forms, gallery, social","reload":true,"id":"footer-light-2"}' style="padding-bottom: 0;">
+    data-preset='{"title":"Footer light 2","category":"footer, forms, gallery, social","reload":true,"id":"footer-light-2"}'
+    style="padding-bottom: 0;">
     <div class="footer-top">
         <div class="container-fluid">
             <div class="row align-item-center">
@@ -52,8 +53,8 @@
                         <p class="footer-middle-text">Lorem ipsum dolort amet, consectetur adipimag A ms pum sociis
                             natoque penatibus.A ms pum sociis natoque penatibus.</p>
                         {{-- <h2 class="footer-middle-heading">Get Free Estimate</h2>
-                        <p class="footer-middle-text">Our online scheduling and payment system is safe.</p> <a href="#"
-                            class="footer-request-btn">Request with Online Form</a> --}}
+                                    <p class="footer-middle-text">Our online scheduling and payment system is safe.</p> <a href="#"
+                                    class="footer-request-btn">Request with Online Form</a> --}}
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6 item">
@@ -86,8 +87,9 @@
                             <div class="footercontact-list-icon"> <i class="fas fa-map-marked-alt"></i> </div>
                             <div class="footercontact-list-info">
                                 <h2>ENDEREÇO</h2>
-                                <p><a href="http://maps.google.com/maps?q=5+Rua+José+Pio+Magalhães,+Guarulhos,+CEP+07133080" target="blank">R. José Pio Magalhães, 5
-                                    <br> Guarulhos - Brasil
+                                <p><a href="http://maps.google.com/maps?q=5+Rua+José+Pio+Magalhães,+Guarulhos,+CEP+07133080"
+                                        target="blank">R. José Pio Magalhães, 5
+                                        <br> Guarulhos - Brasil
                                 </p></a>
                             </div>
                         </div>
@@ -96,7 +98,8 @@
                             <div class="footercontact-list-info">
                                 <h2>CONTATOS</h2>
                                 <p><a href="tel:+55-11-2401-2697">+55 11 2401 2697</a>
-                                    <br> <a href="mailto:contato@xtrafer.com.br?subject=Informação sobre Xtra-fer">contato@xtrafer.com.br</a>
+                                    <br> <a
+                                        href="mailto:contato@xtrafer.com.br?subject=Informação sobre Xtra-fer">contato@xtrafer.com.br</a>
                                 </p>
                             </div>
                         </div>
@@ -140,11 +143,14 @@
         </div>
     </div>
 </footer>
-    <!-- footer end --><a href="#" class="back-to-top"><i class="material-icons">expand_less</i></a>
-    <!-- Script tag -->
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
+<!-- footer end --><a href="#" class="back-to-top"><i class="material-icons">expand_less</i></a>
+<!-- Javascript-->
+<script src="{{ url('assets/js/core.min.js') }}"></script>
+<script src="{{ url('assets/js/script.js') }}"></script>
+<!-- Script tag -->
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="assets/js/main.js"></script>

@@ -768,7 +768,7 @@ Route::group([ 'middleware' => [ 'auth:admin' ] ], function() {
 
 		Route::group([ 'prefix' => 'tags' ], function () {
 			$ctrll = 'Admin\BlogTagsController@';
-			$name = 'admin.blogTags';
+			$name = 'admin.configuration.blog.tags';
 
 			Route::get('', "{$ctrll}list")->name($name);
 			Route::get('insert', "{$ctrll}insert")->name($name);

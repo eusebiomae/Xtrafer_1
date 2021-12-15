@@ -35,11 +35,10 @@
 						@foreach ($blog_right as $item)
 							<div class="construction-news-wrapper">
 									<div class="consnews-right-img">
-										<a href="blog_details/{{$blog_home->id}}" class="news-read-more-btn">
+										<a href="blog_details/{{$item->id}}" class="news-read-more-btn">
 											<div class="construction-news-img"> <img src="{{$item->image}}" alt="img">
 													<div class="date-box">
 															<p>{{$item->scheduling_date}}</p>
-															<p>APR</p>
 													</div>
 											</div>
 										</a>
