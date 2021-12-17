@@ -1149,7 +1149,7 @@ th {
 }
 
 .slider-section .owl-carousel .owl-item img {
-    height: 700px;
+    height: 800px;
     object-fit: cover;
 }
 
@@ -2078,7 +2078,7 @@ hr {
 }
 
 .breadcrumb-section.about {
-    background-image: linear-gradient(rgba(0, 18, 50, 0.7), rgba(0, 18, 50, 0.7)), url('../images/breadcrump-bg.jpg');
+    background-image: linear-gradient(rgb(249 191 44 / 51%), rgb(249 191 44 / 51%)), url('../images/breadcrump-bg.jpg');
 }
 
 .breadcrumb-wrapper h2 {
@@ -2709,6 +2709,10 @@ cite {
     background: #41578a;
 }
 
+.post-social-icons a i.social.fa-facebook-f {
+    background: #41578a00;
+}
+
 .post-social-icons a i.fa-twitter {
     background: #64bae2;
 }
@@ -2721,6 +2725,10 @@ cite {
     background: #3397b6;
 }
 
+.post-social-icons a i.social.fa-linkedin {
+    background: #41578a00;
+}
+
 .post-social-icons a i.fa-at {
     background: #5B51D8;
 }
@@ -2729,8 +2737,16 @@ cite {
     background: #5B51D8;
 }
 
+.post-social-icons a i.social.fa-instagram {
+    background: #41578a00;
+}
+
 .post-social-icons a i.fa-whatsapp {
     background: #25D366;
+}
+
+.post-social-icons a i.social.fa-whatsapp {
+    background: #41578a00;
 }
 
 .post-social-icons a i.fa-telegram-plane {

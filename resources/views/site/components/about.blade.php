@@ -10,7 +10,7 @@
                                 <a class="nav-item nav-link active" id="who-we-tab" data-toggle="tab" href="#who-we"
                                     role="tab" aria-controls="who-we" aria-selected="true">
                                     <div class="tab-info-block">
-                                        <div class="tab-info-icon"> <img src="assets/images/who-we-are.png" alt="img">
+                                        <div class="tab-info-icon"> <img src="{{ url ('assets/images/icons/user.png')}}" alt="img">
                                         </div>
                                         <div class="tab-info-text">
                                             <h2>Quem somos</h2>
@@ -21,7 +21,7 @@
                                 <a class="nav-item nav-link" id="our-mission-tab" data-toggle="tab" href="#our-mission"
                                     role="tab" aria-controls="our-mission" aria-selected="false">
                                     <div class="tab-info-block">
-                                        <div class="tab-info-icon"> <img src="assets/images/our-mission.png" alt="img">
+                                        <div class="tab-info-icon"> <img src="{{ url ('assets/images/icons/mission.png')}}" alt="img">
                                         </div>
                                         <div class="tab-info-text">
                                             <h2>Nossa missão</h2>
@@ -32,7 +32,7 @@
                                 <a class="nav-item nav-link" id="what-we-tab" data-toggle="tab" href="#what-we"
                                     role="tab" aria-controls="what-we" aria-selected="false">
                                     <div class="tab-info-block">
-                                        <div class="tab-info-icon"> <img src="assets/images/what-we-have.png"
+                                        <div class="tab-info-icon"> <img src="{{ url ('assets/images/icons/service.png')}}"
                                                 alt="img"> </div>
                                         <div class="tab-info-text">
                                             <h2>o que oferecemos</h2>
@@ -43,7 +43,7 @@
                                 <a class="nav-item nav-link" id="safety-tab" data-toggle="tab" href="#safety" role="tab"
                                     aria-controls="safety" aria-selected="false">
                                     <div class="tab-info-block">
-                                        <div class="tab-info-icon"> <img src="assets/images/safety.png" alt="img">
+                                        <div class="tab-info-icon"> <img src="{{ url ('assets/images/icons/helmet.png')}}" alt="img">
                                         </div>
                                         <div class="tab-info-text">
                                             <h2>segurança em primeiro lugar</h2>
@@ -66,26 +66,26 @@
 
                                 <div class="tab-pane fade show active" id="who-we" role="tabpanel"
                                     aria-labelledby="who-we-tab">
-                                    <div class="tab-content-wrapper"> <img src="assets/images/who-we-are.png" alt="img">
+                                    <div class="tab-content-wrapper"> <img src="{{ url ('assets/images/icons/user.png')}}" alt="img" style="max-width: 50%;">
                                         <h2>Quem somos</h2>
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="our-mission" role="tabpanel"
                                     aria-labelledby="our-mission-tab">
-                                    <div class="tab-content-wrapper"> <img src="assets/images/our-mission.png"
-                                            alt="img">
+                                    <div class="tab-content-wrapper"> <img src="{{ url ('assets/images/icons/mission.png')}}"
+                                            alt="img" style="max-width: 50%;">
                                         <h2>Nossa missão</h2>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="what-we" role="tabpanel" aria-labelledby="what-we-tab">
-                                    <div class="tab-content-wrapper"> <img src="assets/images/what-we-have.png"
-                                            alt="img">
+                                    <div class="tab-content-wrapper"> <img src="{{ url ('assets/images/icons/service.png')}}"
+                                            alt="img" style="max-width: 50%;">
                                         <h2>O que oferecemos</h2>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="safety" role="tabpanel" aria-labelledby="safety-tab">
-                                    <div class="tab-content-wrapper"> <img src="assets/images/safety.png" alt="img">
+                                    <div class="tab-content-wrapper"> <img src="{{ url ('assets/images/icons/helmet.png')}}" alt="img" style="max-width: 50%;">
                                         <h2>segurança em primeiro lugar</h2>
                                     </div>
                                 </div>

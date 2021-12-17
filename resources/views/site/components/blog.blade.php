@@ -25,7 +25,7 @@
 					<div class="col-12 col-lg-9">
 						<div class="row">
 							@foreach ($blogs as $blog)
-							<div class="col-12 col-lg-6 col-md-6 item">
+							<div class="col-12 col-lg-6 col-md-6 item blog_item" data-key="blogCategory_{{$blog->blogCategory->id}}">
 								<div class="grid-news-wrapper">
 									<div class="grid-news-item">
 										<div class="grid-news-img"> <img src="{{$blog->image}}" alt="img"> </div>
@@ -46,19 +46,6 @@
 								</div>
 							</div>
 							@endforeach
-							{{-- <div class="col-12">
-								<div class="grid-news-paggination">
-									<ul>
-										<li><a href="#"><span>Prev</span></a></li>
-										<li><a href="#"><span>1</span></a></li>
-										<li><a href="#"><span>2</span></a></li>
-										<li class="active"><a href="#"><span>3</span></a></li>
-										<li><a href="#"><span>4</span></a></li>
-										<li><a href="#"><span>5</span></a></li>
-										<li><a href="#"><span>Next</span></a></li>
-									</ul>
-								</div>
-							</div> --}}
 						</div>
 					</div>
 					<div class="col-12 col-lg-3">
@@ -66,22 +53,24 @@
 							<div class="search-widget">
 								<form>
 									<div>
-										<input type="text" class="search-widget-input" placeholder="Search....">
+										<input type="text" class="search-widget-input" placeholder="Buscar....">
 										<button type="submit" class="search-widget-btn"><i class="material-icons">search</i></button>
 									</div>
 								</form>
 							</div>
+
 							<div class="categories-widget">
 								<h3 class="heading-widget">Categorias</h3>
 								<hr>
 								<ul>
-									<li><a href="{{$blog->blogCategory->description_pt}}">Ferramentas</a></li>
-									<li><a href="{{$blog->blogCategory->description_pt}}">Industria</a></li>
-									<li><a href="{{$blog->blogCategory->description_pt}}">Logística</a></li>
-									<li><a href="{{$blog->blogCategory->description_pt}}">Treinamentos</a></li>
+									<li><a href="/blog" class="category_item active_item">Todos</a></li>
+									@foreach ($blogCategory as $item)
+									<li><a href="#blog" type = "button" class="category_item" data-key="{{$item->id}}" onclick="btnBlog({{$item->id}})">{{$item->description_pt}}</a></li>
+									@endforeach
 								</ul>
 							</div>
-							<div class="recent-post-widget">
+
+							{{-- <div class="recent-post-widget">
 								<h3 class="heading-widget">Posts Mais Antigos</h3>
 								<hr>
 								@foreach ($blog_right as $item)
@@ -90,17 +79,55 @@
 									<h4><a href="blog_details/{{$blog->id}}">{{$item->title_pt}}</a></h4> <span class="date">{{$item->scheduling_date}}</span>
 								</div>
 								@endforeach
-							</div>
-							<div class="tags-widget">
+							</div> --}}
+
+							{{-- <div class="tags-widget">
 								<h3 class="heading-widget">Popular Tags</h3>
 								<hr>
 								<div> <a href="#">Exterior</a> <a href="#">Structural</a> <a href="#">Floor</a> <a href="#">Ceiling</a> <a href="#">Roof</a> <a href="#">Heavy Timber</a> <a href="#">Wood Frame</a> <a href="#">House</a> </div>
-							</div>
+							</div> --}}
+
 						</div>
 					</div>
 				</div>
 			</div>
+
+
+
+			<style>
+				.active_item {
+					background: #fdc300;
+				}
+			</style>
+
+
 		</section>
 		{{-- @endforeach --}}
 	</div>
 	<!-- content end -->
+
+	@section('scripts')
+	@yield('scripts')
+
+	<script>
+
+		function btnBlog(category) {
+
+
+			var catBlog = $(this).attr('data-key');
+			console.log($(`[data-key = ${ category }]`));
+
+			// $('.category_item[category="all"]').addClass('active_item');
+			$('.category_item').removeClass('active_item');
+			$(`[data-key = "${category}"]`).addClass('active_item');
+
+			$('.blog_item').hide();
+
+			$(`[data-key = "blogCategory_${category}"]`).show();
+
+		}
+
+
+	</script>
+
+	@endsection

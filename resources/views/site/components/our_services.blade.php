@@ -11,7 +11,7 @@
                             <h2 class="main-heading">Construimos soluções para<br> sua empresa </h2>
                             <div class="home-feature-list">
                                 <div class="home-feature-listitem">
-                                    <div class="feature-list-icon"> <img src="assets/images/safety.png" alt="img">
+                                    <div class="feature-list-icon"> <img src="{{ url ('assets/images/icons/tools.png')}}" alt="img" style="width: 45px; height: 45px;">
                                     </div>
                                     <div class="feature-list-info">
                                         <h2 class="sub-heading-medium">Ferramentas de primeira qualidade</h2>
@@ -20,7 +20,7 @@
                                     </div>
                                 </div>
                                 <div class="home-feature-listitem">
-                                    <div class="feature-list-icon"> <img src="assets/images/safety.png" alt="img">
+                                    <div class="feature-list-icon"> <img src="{{ url ('assets/images/icons/worker.png')}}" alt="img" style="width: 45px; height: 45px;">
                                     </div>
                                     <div class="feature-list-info">
                                         <h2 class="sub-heading-medium">especialistas experientes</h2>

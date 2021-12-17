@@ -7,11 +7,11 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-5">
                     <div class="breadcrumb-wrapper">
-                        <h2>Contáte-nos</h2>
+                        <h2>Fale conosco</h2>
                         <nav>
                             <ul>
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active"><a href="#">Contáte-nos</a></li>
+                                <li class="breadcrumb-item active"><a href="#">Fale conosco</a></li>
                             </ul>
                         </nav>
                     </div>

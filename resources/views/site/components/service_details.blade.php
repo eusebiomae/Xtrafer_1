@@ -23,7 +23,7 @@
 					<div class="col-12 col-lg-4 col-md-6">
 						<div class="services-offer-wrapper">
 							<div class="services-offer-body">
-								<div> <img src="../../assets/images/top-rated.png" alt="img"> </div>
+								<div> <img src="{{ url ('assets/images/icons/avaliacao.png')}}" alt="img"> </div>
 								<div>
 									<h2 class="sub-heading-medium">Grandes parceiros</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
@@ -34,7 +34,7 @@
 					<div class="col-12 col-lg-4 col-md-6">
 						<div class="services-offer-wrapper">
 							<div class="services-offer-body">
-								<div> <img src="../../assets/images/thumbs-up.png" alt="img"> </div>
+								<div> <img src="{{ url ('assets/images/icons/like.png')}}" alt="img"> </div>
 								<div>
 									<h2 class="sub-heading-medium">A melhor qualidade</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
@@ -45,7 +45,7 @@
 					<div class="col-12 col-lg-4 col-md-6">
 						<div class="services-offer-wrapper">
 							<div class="services-offer-body">
-								<div> <img src="../../assets/images/pound.png" alt="img"> </div>
+								<div> <img src="{{ url ('assets/images/icons/dollar.png')}}" alt="img"> </div>
 								<div>
 									<h2 class="sub-heading-medium">O melhor custo</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
