@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\site\xtrafer;
 
+// grab recaptcha library
+// require_once "recaptchalib.php";
+
 use App\Http\Controllers\site\xtrafer\_Controller;
 use App\Model\api\BlogModel;
 use Illuminate\Http\Request;
@@ -32,5 +35,6 @@ class HomeController extends _Controller
 			->with('blog_right', $blog_right)
 			->with('banners', $banners);
 	}
+
 }
 

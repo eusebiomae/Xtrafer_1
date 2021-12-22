@@ -7,15 +7,15 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="home-feature-box-wrapper">
-                            <h3 class="sub-heading-small">Nossos serviços</h3>
-                            <h2 class="main-heading">Construimos soluções para<br> sua empresa </h2>
+                            <h3 class="sub-heading-small" style="font-size: 20px;">Nossos serviços</h3>
+                            <h2 class="main-heading" style="color: #000;">Construimos soluções para<br> sua empresa </h2>
                             <div class="home-feature-list">
                                 <div class="home-feature-listitem">
                                     <div class="feature-list-icon"> <img src="{{ url ('assets/images/icons/tools.png')}}" alt="img" style="width: 45px; height: 45px;">
                                     </div>
                                     <div class="feature-list-info">
-                                        <h2 class="sub-heading-medium">Ferramentas de primeira qualidade</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        <h2 class="sub-heading-medium" style="color: #000;">Ferramentas de primeira qualidade</h2>
+                                        <p style="color: #000">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                             tempor incididunt ut labore.</p>
                                     </div>
                                 </div>
@@ -23,8 +23,8 @@
                                     <div class="feature-list-icon"> <img src="{{ url ('assets/images/icons/worker.png')}}" alt="img" style="width: 45px; height: 45px;">
                                     </div>
                                     <div class="feature-list-info">
-                                        <h2 class="sub-heading-medium">especialistas experientes</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        <h2 class="sub-heading-medium" style="color: #000">especialistas experientes</h2>
+                                        <p style="color: #000">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                             tempor incididunt ut labore.</p>
                                     </div>
                                 </div>

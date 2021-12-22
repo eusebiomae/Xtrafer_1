@@ -111,14 +111,14 @@
                             natoque penatibus.A ms pum sociis natoque penatibus.</p> --}}
                     </div>
                     <div class="share-item" style="margin-top: 25px;">
-                        <ul class="post-social-icons list-unstyled">
+                        <ul class="post-social-icons list-unstyled" style="text-align: center;">
                             <li> <a class="footercontact-list-icon-index" title="Facebook" href="https://www.facebook.com/gigapixxel/" target="_blank"><i class="social fab fa-facebook-f"></i></a> </li>
                             {{-- <li> <a class="footercontact-list-icon-index" title="Email" href="" id="mail-share-btt" target="_blank"><i class="social fas fa-at"></i></a> </li> --}}
                             {{-- <li> <a class="footercontact-list-icon-index" title="Telegram" href="" id="telegram-share-btt" target="_blank"><i class="social fab fa-telegram-plane"></i></a> </li> --}}
                             <li> <a class="footercontact-list-icon-index" title="Linkedin" href="https://www.linkedin.com/company/gigapixxel/?originalSubdomain=br" target="_blank"><i class="social fab fa-linkedin"></i></a> </li>
                             {{-- <li> <a class="footercontact-list-icon-index" title="Twitter" href="" id="twitter-share-btt" target="_blank"><i class="social fab fa-twitter"></i></a> </li> --}}
                             <li> <a class="footercontact-list-icon-index" title="Instagram" href="https://www.instagram.com/gigapixxel/" target="_blank"><i class="social fab fa-instagram"></i></a> </li>
-                            <li> <a class="footercontact-list-icon-index" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5516982651020&text=Ol%C3%A1!%20Acabei%20de%20acessar%20o%20site%20da%20GigaPixel%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20que%20a%20empresa%20realiza." target="_blank"><i class="social fab fa-whatsapp"></i></a> </li>
+                            <li> <a class="footercontact-list-icon-index" title="Whatsapp" href="https://api.whatsapp.com/send?phone=5516982651020&text=Ol%C3%A1!%20Acabei%20de%20acessar%20o%20site%20da%20Xtra-fer%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20que%20a%20Gigapixel%20realiza." target="_blank"><i class="social fab fa-whatsapp"></i></a> </li>
                         </ul>
                     </div>
                 </div>
@@ -205,14 +205,14 @@
         line-height: 26px;
         color: #FDC300;
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 0px;
     }
 
     .footercontact-list-icon-index {
 
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         border: 1px solid #FDC300;
         background: transparent;
         color: #FDC300;

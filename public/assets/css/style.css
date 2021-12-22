@@ -31,7 +31,7 @@
     --font-size-subheading: 25px;
     --font-weight: normal;
     --text-color: #2e3856;
-    --heading-color: #052358;
+    --heading-color: #000;
     --subheading-color: #05224e;
     --button-bg: #FDC300;
     --top-header-bg: #f0f9ff;
@@ -528,7 +528,7 @@ th {
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    color: #052358;
+    color: #000;
 }
 
 .main-menu-nav a:hover {
@@ -723,7 +723,7 @@ th {
 
 .mobile-menu-heading {
     font-size: 28px;
-    color: #052358;
+    color: #000;
 }
 
 .mobile-menu-contact ul {
@@ -970,6 +970,10 @@ th {
     margin-bottom: 10px;
 }
 
+.footercontact-list-info a:hover {
+    color: #fdc300;
+}
+
 .footer-post-list {
     display: flex;
     padding-bottom: 20px;
@@ -1072,7 +1076,7 @@ th {
     font-family: 'Oxygen-Bold';
     margin-bottom: 10px;
     opacity: 0;
-    color: #052358;
+    color: #000;
 }
 
 .slider-text p {
@@ -1080,7 +1084,7 @@ th {
     opacity: 0;
     line-height: 25px;
     font-weight: normal;
-    color: #052358;
+    color: #000;
 }
 
 .slider-text p span {
@@ -1222,14 +1226,14 @@ th {
     border-radius: 6px;
     width: 150px;
     text-transform: uppercase;
-    color: #052358;
+    color: #000;
     padding: 12px;
     box-shadow: 0px 4px 4px rgba(136, 136, 136, 0.27);
     font-size: 13px;
 }
 
 .banner-quote-btn:hover {
-    color: #052358;
+    color: #000;
 }
 
 .top-tab-block {
@@ -1267,7 +1271,7 @@ th {
 .tab-info-text h2 {
     font-size: 20px;
     font-family: 'Oxygen-Bold';
-    color: #052358;
+    color: #000;
     text-transform: uppercase;
     margin-bottom: 0;
 }
@@ -1291,7 +1295,7 @@ th {
 
 .about-info-left {
     /* background: url('../images/construction-tool.jpg'); */
-    background: url('../images/img/construction-tool.jpg');
+    background: url('../images/images/walter.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1311,7 +1315,7 @@ th {
 }
 
 .about-home-right-info h2 {
-    color: #052358;
+    color: #000;
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -1357,7 +1361,7 @@ th {
 .tab-content-wrapper h2 {
     font-size: 20px;
     line-height: 29px;
-    color: #052358;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -1366,7 +1370,7 @@ th {
 }
 
 .home-feature-bg {
-    background: url('../images/banner-2.jpg');
+    background: url('../images/images/05.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1384,14 +1388,14 @@ th {
 }
 
 .main-heading {
-    color: #052358;
+    color: #000;
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .sub-heading-medium {
-    color: #052358;
+    color: #000;
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -1521,7 +1525,7 @@ th {
 }
 
 .sub-heading-medium-camel {
-    color: #052358;
+    color: #000;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -1744,7 +1748,7 @@ th {
 
 .special-project-info-wrapper h3 {
     text-transform: uppercase;
-    color: #052358;
+    color: #000;
     font-size: 12px;
 }
 
@@ -1758,7 +1762,7 @@ hr {
     border: 0;
     height: 3px;
     background: #1e5799;
-    background: linear-gradient(to right, #052358 50%, #FDC300 50%);
+    background: linear-gradient(to right, #000 50%, #FDC300 50%);
     width: 60px;
     display: inline-block;
     text-align: left;
@@ -1777,7 +1781,7 @@ hr {
     border-radius: 6px;
     width: 150px;
     text-transform: uppercase;
-    color: #052358;
+    color: #000;
     padding: 9px;
     font-size: 13px;
     text-align: center;
@@ -1962,7 +1966,7 @@ hr {
 .construction-new-info h2 {
     font-size: 20px;
     font-family: 'Oxygen-Bold';
-    color: #052358;
+    color: #000;
 }
 
 .construction-news-action {
@@ -2188,7 +2192,7 @@ hr {
 }
 
 .collapse-paneel-wrapper .card-header h5 button {
-    color: #052358;
+    color: #000;
     font-family: 'Oxygen-Bold';
     width: 100%;
     display: flex;
@@ -2213,7 +2217,7 @@ hr {
 }
 
 .sub-heading-medium-cap {
-    color: #052358;
+    color: #000;
     font-size: 20px;
     text-transform: capitalize;
     margin-bottom: 10px;
@@ -2309,7 +2313,7 @@ hr {
 }
 
 .contact-form-group .form-label {
-    color: #052358;
+    color: #000;
 }
 
 .contact-form-group .form-input {
@@ -2894,7 +2898,7 @@ cite {
 }
 
 .services-heaading {
-    color: #052358;
+    color: #000;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -3821,7 +3825,7 @@ element.style {
 }
 
 .form-label {
-    color: #052358;
+    color: #000;
 }
 
 .form-input {

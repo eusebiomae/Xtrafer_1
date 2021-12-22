@@ -68,7 +68,7 @@
 								<p>Please review our Privacy Policy for information concerning the collection, use and/or disclosure of personal information in relation to this website.</p>
 
 								<h2 class="sub-heading-medium">QUESTIONS</h2>
-								<p>If you have any questions concerning the terms and conditions of use of this website, please contact us by e-mail at <b><a href="#">info@fconstruct.com</a></b> or call us at <b><a href="#">123-456-7890.</a></b></p>
+								<p>If you have any questions concerning the terms and conditions of use of this website, please contact us by e-mail at <b><a href="mailto:contato@xtrafer.com.br?subject=Política de Privacidade Xtra-fer">contato@xtrafer.com.br</a></b> or call us at <b><a href="tel:+55-11-2401-2697">+55 11 2401 2697.</a></b></p>
 							</div>
 						</div>
 					</div>

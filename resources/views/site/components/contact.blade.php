@@ -105,42 +105,57 @@
                         <h2 class="main-heading">nos envie uma mensagem</h2>
                         <div class="form-inner">
                             <form method="POST" action="/sendContact">
-																{{ csrf_field() }}
+                                {{ csrf_field() }}
                                 <div class="row">
                                     <div class="col-12 col-lg-4 col-md-4">
                                         <div class="contact-form-group">
                                             <label class="form-label">Nome</label>
-                                            <input name="name" class="form-input" type="text" placeholder="Seu Nome">
+                                            <input name="name" class="form-input" type="text"
+                                                placeholder="Seu Nome">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-4 col-md-4">
                                         <div class="contact-form-group">
                                             <label class="form-label">Empresa</label>
-                                            <input name="company" class="form-input" type="text" placeholder="Sua Empresa">
+                                            <input name="company" class="form-input" type="text"
+                                                placeholder="Sua Empresa">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-4 col-md-4">
                                         <div class="contact-form-group">
                                             <label class="form-label">Email</label>
-                                            <input name="email" class="form-input" type="text" placeholder="Seu Email">
+                                            <input name="email" class="form-input" type="text"
+                                                placeholder="Seu Email">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-4 col-md-4">
                                         <div class="contact-form-group">
                                             <label class="form-label">Assunto</label>
-                                            <input name="subject" class="form-input" type="text" placeholder="Seu Assunto">
+                                            <input name="subject" class="form-input" type="text"
+                                                placeholder="Seu Assunto">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-12 col-md-12">
                                         <div class="contact-form-group">
                                             <label class="form-label">Mensagem</label>
-                                            <textarea class="form-input-textarea" rows="6"
-                                                placeholder="Seu Mensagem" name="msg"></textarea>
+                                            <textarea class="form-input-textarea" rows="6" placeholder="Seu Mensagem"
+                                                name="msg"></textarea>
                                         </div>
                                     </div>
+
+                                    <!--Google captcha-->
+                                    <div class="col-sm-12">
+                                        <div class="form-wrap form-validation-left">
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6Le0N7cdAAAAAFlWhqw80Iof8cP7C81hYXHFKxaE"></div>
+                                        </div>
+                                    </div>
+                                    <!--End Google captcha -->
+
                                     <div class="col-12 col-lg-12 col-md-12">
                                         <div class="contact-form-group float-right">
-                                            <button id="your-id" type="submit" class="learn-more-btn float-right"> enviar </button></a>
+                                            <button id="your-id" type="submit" class="learn-more-btn float-right">
+                                                enviar </button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -156,6 +171,7 @@
             //    This can also be done by setting <form name="blub">:
             //       var form = document.forms.blub;
         </script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
 
     </section>
 </div>

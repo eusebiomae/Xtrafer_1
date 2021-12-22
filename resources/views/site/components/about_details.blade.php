@@ -40,10 +40,10 @@
 					<div class="col-12 col-lg-6 col-md-6">
 						<div class="company-overview-wrapper">
 							<div class="overview-image-top">
-								<div class="overview-top-image item"> <img src="../assets/images/img/project-1.jpg" alt="img"> </div>
-								<div class="overview-top-image item"> <img src="../assets/images/img/project-2.jpg" alt="img"> </div>
+								<div class="overview-top-image item"> <img src="../assets/images/company/sustainability.jpg" alt="img"> </div>
+								<div class="overview-top-image item"> <img src="../assets/images/company/mission.jpg" alt="img"> </div>
 							</div>
-							<div class="overview-image-bottom item"> <img src="../assets/images/img/project-3.jpg" alt="img"> </div>
+							<div class="overview-image-bottom item"> <img src="../assets/images/company/building.jpg" alt="img"> </div>
 						</div>
 					</div>
 				</div>
