@@ -5,11 +5,11 @@
                 <div class="swiper-slide-caption section-md text-sm-left">
                     <div class="container">
                         <div class="row">
-													<div class="col-sm-4 col-md-5">
-															<img src="{{ $item['image'] }}" alt="" class="img-generic-banner"
-																	style="margin-left: 100px;" data-caption-animate="fadeInRight"
-																	data-caption-delay="250">
-													</div>
+                            <div class="col-sm-4 col-md-5">
+                                <img src="{{ $item['image'] }}" alt="" class="img-generic-banner"
+                                    style="margin-left: 100px;" data-caption-animate="fadeInRight"
+                                    data-caption-delay="250">
+                            </div>
                             <div class="col-sm-8 col-md-7">
                                 <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100"
                                     style="margin-top: 150px; margin-left: 300px;">{{ $item['title_pt'] }}</h2>

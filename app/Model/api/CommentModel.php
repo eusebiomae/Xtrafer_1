@@ -16,6 +16,7 @@ class CommentModel extends Model
 		'blog_id',
 		'name',
 		'email',
+		'date',
 		'comments',
 		'approved',
 		'approved_by',
@@ -36,4 +37,5 @@ class CommentModel extends Model
 	static public function getByBlog($blogId, $offset, $rowCount) {
 		return CommentModel::where('blog_id', $blogId)->whereNull('answer_from')->with('answerFrom')->orderBy('created_at', 'desc')->limit($rowCount)->offset($offset)->get();
 	}
+
 }

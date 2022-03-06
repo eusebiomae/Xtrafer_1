@@ -29,7 +29,7 @@ class EmailConfirmationMail extends Mailable
 	public function build()
 	{
 		return $this->view('email.emailConfirmationMail')
-		->subject('Confirmação de Cadastro')
+		->subject('Confirmação de Envio de Mensagem')
 		->with([ 'data' => $this->data, ]);
 	}
 }

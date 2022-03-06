@@ -32,7 +32,7 @@ class ResellerMail extends Mailable
     {
         return $this
         ->from( config('mail.from.address') )
-        ->subject('Novo Revendedor Dom Massas')
+        ->subject('Nova Mensagem de Cliente')
         ->view('site/pages/register-message')
         ->with('data', $this->data);
     }

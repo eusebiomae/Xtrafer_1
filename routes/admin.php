@@ -933,7 +933,7 @@ Route::group([ 'middleware' => [ 'auth:admin' ] ], function() {
 	});
 
 	Route::group([ 'prefix' => 'office' ], function () {
-		$ctrll = 'Admin\OfficeController@';
+		$ctrll = 'Admin\Configuration\OfficeController@';
 		$name = 'admin.office';
 
 		Route::get('', "{$ctrll}list")->name($name);

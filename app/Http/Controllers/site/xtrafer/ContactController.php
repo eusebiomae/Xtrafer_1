@@ -4,7 +4,7 @@ namespace App\Http\Controllers\site\xtrafer;
 
 use App\Model\api\Configuration\ContentPageModel;
 use Illuminate\Http\Request;
-use App\Model\api\SchoolInformationModel;
+use App\Model\api\contactModel;
 use App\Model\api\SlideModel;
 use App\Model\api\FeatureModel;
 use App\Model\api\ContentModel;
@@ -31,7 +31,7 @@ class ContactController extends _Controller
 		// 	$query->where('flg_page', $flgPage);
 		// })->get();
 
-		// $schoolInformation = schoolInformation();
+		// $contact = contact();
 
 		// $features = [
 		// 	(object) [
@@ -53,7 +53,7 @@ class ContactController extends _Controller
 		return view('site/pages/contact')
 			->with('flgPage', $flgPage)
 			->with('pageComponents', $pageComponents);
-			// ->with('schoolInformation', $schoolInformation)
+			// ->with('contact', $contact)
 			// ->with('features', $features)
 			// ->with('banner', SlideModel::whereHas('contentPage', function($query) use ($flgPage) {
 			// 	$query->where('flg_page', $flgPage);
@@ -63,9 +63,10 @@ class ContactController extends _Controller
 	}
 
 	public function save(Request $request) {
-		$schoolInformation = schoolInformation();
 
-		\Illuminate\Support\Facades\Mail::to($schoolInformation->email1, 'Contato - ' . $schoolInformation->name)->send(new \App\Mail\ContactMail($request->all()));
+		$contact = contact();
+
+		\Illuminate\Support\Facades\Mail::to($contact->email1, 'Contato - ' . $contact->name)->send(new \App\Mail\SendMail($request->all()));
 
 		return redirect()->back()->withInput(['savedSuccessfully' => true]);
 	}

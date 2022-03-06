@@ -5,10 +5,11 @@
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-5">
 					<div class="breadcrumb-wrapper">
-						<h2>Detalhes do Blog</h2>
+						<h2>{{ $blog->title_pt }}</h2>
 						<nav>
 							<ul>
 								<li class="breadcrumb-item"><a href="/">Home</a></li>
+								<li class="breadcrumb-item"><a href="/blog">Blog</a></li>
 								<li class="breadcrumb-item active"><a href="#">Detalhes do Blog</a></li>
 							</ul>
 						</nav>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Model\api\ContactModel;
 use App\Model\api\SchoolInformationModel;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
@@ -22,9 +23,9 @@ function adminSession()
 	}
 }
 
-function schoolInformation()
+function contact()
 {
-	return SchoolInformationModel::whereNotNull('flg_main')->with('state')->first();
+	return ContactModel::whereNotNull('flg_main')->first();
 }
 
 function normalizeColunsToViewOld($columns)

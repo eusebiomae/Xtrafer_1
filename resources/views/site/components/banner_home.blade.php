@@ -6,10 +6,11 @@
                 <li>
                     <div class="slider-img"><img src="{{ $banner->image }}" alt="Sldie 1" /></div>
                     <div class="slider-text">
-                        <h3>{{ $banner->title_pt }}
+                        <h3 style="color: #fff;">{{ $banner->title_pt }}
                         </h3>
-                        <p><span>{{ $banner->subtitle_pt }}</span></p>
-                        <div class="banner-btns"> <a href="/about_details" class="banner-learn-btn">saiba mais</a>
+                        <p style="color: #fff;"><span>{{ $banner->subtitle_pt }}</span></p>
+                        <div class="banner-btns">
+                            <a href="/about_details" class="banner-learn-btn" style="color: #000">saiba mais</a>
                             <a href="#" data-toggle="modal" data-target="#getquote" class="banner-quote-btn">faça um orçamento</a>
                         </div>
                     </div>

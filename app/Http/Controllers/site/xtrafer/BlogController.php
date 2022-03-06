@@ -48,7 +48,7 @@ class BlogController extends _Controller
 
 		// return $blog;
 
-		return view ('site/pages/blog_details')
+		return view ('site/pages/default')
 		->with('flgPage', $flgPage)
 		->with('pageComponents', $pageComponents)
 		->with('blog', $blog);

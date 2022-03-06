@@ -2,33 +2,65 @@
 @foreach ($pageData->content as $item)
     <!-- features start -->
     <section class="section" style="padding: 0px 0px">
-        <div class="home-feature-bg">
+        <div class="home-feature-bg" style="height: auto !important">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
+                <div class="row" style="margin-top: -25px;">
+                    <div class="col-md-12">
                         <div class="home-feature-box-wrapper">
-                            <h3 class="sub-heading-small" style="font-size: 20px;">Nossos serviços</h3>
-                            <h2 class="main-heading" style="color: #000;">Construimos soluções para<br> sua empresa </h2>
+                            <h3 class="sub-heading-small" style="font-size: 20px;">Nossos Portfólios</h3>
+                            <h2 class="main-heading" style="color: #fff;">Construimos soluções para sua empresa </h2>
                             <div class="home-feature-list">
-                                <div class="home-feature-listitem">
-                                    <div class="feature-list-icon"> <img src="{{ url ('assets/images/icons/tools.png')}}" alt="img" style="width: 45px; height: 45px;">
+                                <div class="home-feature-listitem listitem-head">
+                                    <div class="feature-list-icon"> <img
+                                            src="{{ url('assets/images/icons/worker.png') }}" alt="img"
+                                            style="width: 45px; height: 45px;">
                                     </div>
                                     <div class="feature-list-info">
-                                        <h2 class="sub-heading-medium" style="color: #000;">Ferramentas de primeira qualidade</h2>
-                                        <p style="color: #000">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore.</p>
+                                        <h2 class="sub-heading-medium" style="color: #fff;">Treinamentos</h2>
+                                        <p style="color: #fff"> Sempre procuramos manter nossos clientes atualizamos
+                                            sobre cada
+                                            inovação no mercado. Por isso, oferecemos treinamentos sobre Torneamento e
+                                            Fresamento juntamente com aula práticas e estudos de casos específicos. </p>
                                     </div>
                                 </div>
                                 <div class="home-feature-listitem">
-                                    <div class="feature-list-icon"> <img src="{{ url ('assets/images/icons/worker.png')}}" alt="img" style="width: 45px; height: 45px;">
+                                    <div class="feature-list-icon"> <img
+                                            src="{{ url('assets/images/icons/tools.png') }}" alt="img"
+                                            style="width: 45px; height: 45px;">
                                     </div>
                                     <div class="feature-list-info">
-                                        <h2 class="sub-heading-medium" style="color: #000">especialistas experientes</h2>
-                                        <p style="color: #000">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore.</p>
+                                        <h2 class="sub-heading-medium" style="color: #fff">Produtos</h2>
+                                        <p style="color: #fff"> Temos disponíveis peças para maquinários da mais alta
+                                            qualidade e inovação.
+                                            Dessa forma, oferecemos peças específicas para torneamento, lâminas de
+                                            corte, barras de
+                                            mandrilar, furação, fresa de metal duro, macho laminador, fresamento de
+                                            facear,
+                                            fresamento 90° e muitas outras.</p>
                                     </div>
                                 </div>
-                            </div> <a href="/service_details" class="learn-more-btn m-25px-t">Saiba mais</a>
+                                <div class="home-feature-listitem">
+                                    <div class="feature-list-icon"> <img
+                                            src="{{ url('assets/images/icons/helmet.png') }}" alt="img"
+                                            style="width: 45px; height: 45px;">
+                                    </div>
+                                    <div class="feature-list-info">
+                                        <h2 class="sub-heading-medium" style="color: #fff">Consultoria</h2>
+                                        <p style="color: #fff">Auxiliamos em todo o processo para a escolha do produto
+                                            certo para a sua
+                                            empresa. Assim, realizamos:</p>
+                                        <p style="color: #fff">
+                                            Acompanhamentos de novos projetos até a sua finalização; Indicações de
+                                            ferramentas ideias de acordo com a necessidade de cada cliente;
+                                            Instalações de ferramentas; Acompanhamento para melhorar o processo de
+                                            funcionamento de ferramentas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/service_details" class="learn-more-btn m-25px-t btn-saiba"
+                                style="color: #000;">Saiba
+                                mais</a>
                         </div>
                     </div>
                 </div>
@@ -127,8 +159,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="contactus-bar-button-block"> <a href="/contact"
-                            class="contactus-bar-btn">contáte-nos</a> </div>
+                    <div class="contactus-bar-button-block"> <a href="/contact" class="contactus-bar-btn">entre em
+                            contato</a> </div>
                 </div>
             </div>
         </div>

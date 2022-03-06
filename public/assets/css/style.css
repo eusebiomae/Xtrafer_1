@@ -789,7 +789,7 @@ th {
 
 .footer-top {
     background: #FDC300;
-    padding: 15px 100px;
+    padding-inline: 5px;
     position: relative;
     display: inline-block;
     width: 100%;
@@ -810,6 +810,7 @@ th {
 
 .footer-logo a img {
     width: 180px;
+    margin-inline: 50px;
 }
 
 .footer-top-right-info {
@@ -821,12 +822,12 @@ th {
     font-size: 20px;
     font-family: 'Oxygen-Bold';
     font-weight: normal;
-    color: #fff;
+    color: #000;
     margin-bottom: 0;
 }
 
 .footer-top-info-text p {
-    color: #fff;
+    color: #000;
     line-height: 22px;
     margin-bottom: 0;
 }
@@ -834,16 +835,16 @@ th {
 .footer-top-info-icon span i {
     font-size: 40px;
     color: #fff;
-    margin-right: 15px;
+    margin-inline: 10px;
 }
 
 .subscribe-input {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #000;
     box-sizing: border-box;
     border-radius: 6px;
     padding: 15px 10px;
     background: transparent;
-    color: #fff;
+    color: #000;
     width: 85%;
     float: right;
     padding-right: 75px;
@@ -1153,7 +1154,7 @@ th {
 }
 
 .slider-section .owl-carousel .owl-item img {
-    height: 800px;
+    height: 590px;
     object-fit: cover;
 }
 
@@ -1280,7 +1281,7 @@ th {
 .nav-tabs .nav-link.active {
     background-color: #fff;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #fdc300;
 }
 
 .nav-link:hover {
@@ -1295,8 +1296,44 @@ th {
 
 .about-info-left {
     /* background: url('../images/construction-tool.jpg'); */
-    background: url('../images/images/walter.png');
+    background: url('../images/images/novo/3.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.about-info-left2 {
+    /* background: url('../images/construction-tool.jpg'); */
+    background: url('../images/images/novo/ourMission3.png');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.about-info-left3 {
+    /* background: url('../images/construction-tool.jpg'); */
+    background: url('../images/images/novo/ourExpertise.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.about-info-left4 {
+    /* background: url('../images/construction-tool.jpg'); */
+    background: url('../images/images/novo/partnership.png');
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1329,8 +1366,8 @@ th {
 .learn-more-btn {
     background: #FDC300;
     border-radius: 6px;
-    max-width: 150px;
-    min-width: 80px;
+    width: 250px;
+    height: auto;
     float: left;
     text-transform: uppercase;
     color: #fff;
@@ -1354,6 +1391,48 @@ th {
     align-items: center;
 }
 
+.about-info-left2 .tab-content {
+    position: absolute;
+    background: #fff;
+    border-bottom: 3px solid #FDC300;
+    width: 50%;
+    top: auto;
+    bottom: -40px;
+    height: 220px;
+    padding: 20px;
+    border-top-right-radius: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.about-info-left3 .tab-content {
+    position: absolute;
+    background: #fff;
+    border-bottom: 3px solid #FDC300;
+    width: 50%;
+    top: auto;
+    bottom: -40px;
+    height: 220px;
+    padding: 20px;
+    border-top-right-radius: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.about-info-left4 .tab-content {
+    position: absolute;
+    background: #fff;
+    border-bottom: 3px solid #FDC300;
+    width: 50%;
+    top: auto;
+    bottom: -40px;
+    height: 220px;
+    padding: 20px;
+    border-top-right-radius: 95px;
+    display: flex;
+    align-items: center;
+}
+
 .tab-content-wrapper img {
     margin-bottom: 20px;
 }
@@ -1363,6 +1442,8 @@ th {
     line-height: 29px;
     color: #000;
     text-transform: uppercase;
+    position: absolute;
+    margin-top: 125px;
 }
 
 .section {
@@ -1370,12 +1451,12 @@ th {
 }
 
 .home-feature-bg {
-    background: url('../images/images/05.jpeg');
+    background: linear-gradient(rgba(0, 18, 50, 0.7), rgba(0, 18, 50, 0.7)), url('../images/images/ourService.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: auto;
     display: inline-block;
     position: relative;
     padding: 50px 0px;
@@ -1404,6 +1485,11 @@ th {
 .home-feature-list {
     width: 100%;
     float: left;
+}
+
+.home-feature-list-right {
+    width: 100%;
+    float: right;
 }
 
 .home-feature-listitem {
@@ -1728,7 +1814,7 @@ th {
 
 .contactus-bar-text h2 {
     font-size: 18px;
-    color: #fff;
+    color: #000;
     font-family: 'Oxygen-Bold';
     text-transform: uppercase;
 }
@@ -1899,7 +1985,7 @@ hr {
 }
 
 .content-expert-info {
-    background: #FDC300;
+    background: #000;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     padding: 15px;
@@ -1913,7 +1999,7 @@ hr {
 }
 
 .content-expert-info p {
-    color: #2E3856;
+    color: #fdc300;
 }
 
 .content-experts-details ul {
@@ -1927,9 +2013,9 @@ hr {
 }
 
 .content-experts-details ul li a {
-    width: 35px;
-    height: 35px;
-    background: #FDC300;
+    width: auto;
+    height: auto;
+    background: #fdc30000;
     border-radius: 6px;
     color: #fff;
     display: flex;
@@ -2027,7 +2113,7 @@ hr {
 }
 
 .consnews-right-img .construction-news-img img {
-    height: 255px;
+    height: 160px;
 }
 
 .consnews-right-info>.construction-new-info {
@@ -2082,7 +2168,27 @@ hr {
 }
 
 .breadcrumb-section.about {
-    background-image: linear-gradient(rgb(249 191 44 / 51%), rgb(249 191 44 / 51%)), url('../images/breadcrump-bg.jpg');
+    background-image: url('../images/images/ourService.png');
+}
+
+.breadcrumb-section.brands {
+    background-image: url('../images/images/contact.png');
+}
+
+.breadcrumb-section.service {
+    background-image: url('../images/images/distribution.png');
+}
+
+.breadcrumb-section.experts {
+    background-image: url('../images/images/ourTeam2.png');
+}
+
+.breadcrumb-section.blog {
+    background-image: url('../images/images/blog.png');
+}
+
+.breadcrumb-section.contact {
+    background-image: url('../images/images/contact2.png');
 }
 
 .breadcrumb-wrapper h2 {
@@ -2367,7 +2473,7 @@ hr {
 
 .grid-news-img img {
     width: 100%;
-    height: 175px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -2597,7 +2703,7 @@ hr {
 
 .post-content .post-image img {
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
     object-fit: cover;
 }
 
@@ -2822,6 +2928,7 @@ cite {
     color: #959595;
     margin-bottom: 5px;
     font-size: 12px;
+    text-align: end;
 }
 
 .comments-list .comment-content {
@@ -2887,7 +2994,7 @@ cite {
 }
 
 .service-box-body a img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.3s;
 }
 
@@ -2905,7 +3012,7 @@ cite {
 
 .services1-section {
     /* background: #141414; */
-    background-image: linear-gradient(rgba(0, 35, 90, 0.95), rgba(0, 35, 90, 0.95)), url('../images/pattern-bg.png');
+    background-image: linear-gradient(rgb(122 122 122 / 70%), rgb(0 2 6 / 70%)), url('../images/images/07.png');
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2925,7 +3032,7 @@ cite {
     transform: translate(-50%, -50%);
     margin-right: 0;
     bottom: 50px;
-    border: 1px solid rgba(0, 0, 0, .125);
+    border: 1px solid #FDC300;
     border-radius: 50%;
     font-size: 12px;
     display: flex;
@@ -2935,7 +3042,7 @@ cite {
 
 .know-icon-btn i {
     font-size: 14px;
-    color: rgba(0, 0, 0, .125);
+    color: #FDC300;
 }
 
 .service-proposal-body {
@@ -3690,8 +3797,8 @@ cite {
 .back-to-top {
     position: fixed;
     display: none;
-    right: 15px;
-    bottom: 15px;
+    right: 1280px;
+    bottom: 45px;
     z-index: 99999;
 }
 
@@ -4006,4 +4113,63 @@ element.style {
 
 .mobile-menu-toggler a:hover i {
     color: #fff;
+}
+
+@media (max-width: 575px) {
+    .sub-heading-small {
+        text-align: center;
+        margin-bottom: revert;
+    }
+    .main-heading {
+        text-align: center;
+        display: table-row;
+    }
+    .listitem-head {
+        margin-top: 5vh;
+    }
+    .btn-saiba {
+        margin-inline: 7vh;
+    }
+    .nav-item {
+        display: contents;
+    }
+    .col-about {
+        margin-top: 7vh;
+    }
+    .learn-more-btn {
+        margin-inline: 7vh;
+    }
+    .banner-btns {
+        display: flex;
+        text-align: center;
+    }
+    .banner-learn-btn {
+        padding: 19px;
+    }
+    .main-heading-block {
+        display: grid;
+    }
+    .slider-text {
+        margin-top: 7vh;
+    }
+    .construction-news-img img {
+        width: 100%;
+        height: 320px;
+        object-fit: fill;
+        border-radius: 6px;
+        margin-bottom: 30px;
+    }
+    .construction-news-img #image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 30px;
+    }
+    .footer-form {
+        margin-top: 55px;
+    }
+    #nameEmail {
+        position: absolute;
+        bottom: 50px;
+    }
 }
